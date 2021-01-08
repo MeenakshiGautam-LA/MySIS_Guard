@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EEF3">
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:background="#8A0E3C">
+
+        <ImageView
+            android:id="@+id/icon_guard"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_guard" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/icon_guard"
+            android:text="4+ Badges"
+            android:textColor="#FFFFFF" />
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:padding="10dp"
+    >
+
+        <ImageView
+            android:id="@+id/icon_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_notification"
+
+            />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/red_circle"
+        android:layout_gravity="right"
+        />
+
+
+
+</FrameLayout>
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFFFFF">
+            <!--  <FrameLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+          -->
+            <TextView
+                android:id="@+id/current_duty_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Current Duty"
+                android:textColor="#695C70" />
+
+            <TextView
+                android:id="@+id/sbi_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_duty_txt"
+                android:paddingLeft="10dp"
+                android:text="SBI bank DLE UNT 12345"
+                android:textColor="#A799B7" />
+            <!--  </FrameLayout>-->
+            <TextView
+                android:id="@+id/day_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sbi_bank"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="Thursday"
+                android:textColor="#A799B7" />
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sbi_bank"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/day_txt"
+                android:paddingTop="10dp"
+                android:text="6 Feb"
+                android:textColor="#A799B7" />
+
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/day_txt"
+                android:layout_centerHorizontal="true"
+                android:text="10:00"
+                android:textColor="#4C2170"
+                android:textSize="52dp" />
+
+            <TextView
+                android:id="@+id/time_am_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/day_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/time_txt"
+                android:text="A.M"
+                android:textColor="#4C2170"
+                android:textSize="12dp" />
+
+
+            <Button
+                android:id="@+id/duty_in_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_txt"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/rectangular_btn"
+                android:text="Duty In"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/duty_out_btn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/duty_in_btn"
+                android:background="@drawable/duty_out_bg"
+                android:text="Duty Out"
+                android:textColor="#A799B7" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:layout_below="@id/relative"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/next_duty_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Next Duty"
+                android:textColor="#695C70" />
+
+            <TextView
+                android:id="@+id/axis_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/next_duty_txt"
+                android:paddingLeft="10dp"
+                android:text="SBI bank DLE UNT 12345"
+                android:textColor="#A799B7" />
+
+
+            <TextView
+                android:id="@+id/day_txt_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/axis_bank"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="Friday"
+                android:textColor="#A799B7" />
+
+            <TextView
+                android:id="@+id/date_second_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/axis_bank"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/day_txt_second"
+                android:paddingTop="10dp"
+                android:text="7 Feb"
+                android:textColor="#A799B7" />
+
+            <TextView
+                android:id="@+id/time_sec_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/day_txt_second"
+                android:layout_centerHorizontal="true"
+                android:text="10:00"
+                android:textColor="#4C2170"
+                android:textSize="52dp" />
+
+            <TextView
+                android:id="@+id/time_am_second_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/day_txt_second"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/time_sec_txt"
+                android:text="A.M"
+                android:textColor="#4C2170"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/circle_img"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="170dp"
+                    android:src="@drawable/circular"
+                    android:text="jhkjhkjhkjhkj" />
+
+                <TextView
+                    android:id="@+id/duty_in_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duty In"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="100dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click here to Mark Attendance"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                   android:layout_marginTop="140dp" />
+
+
+
+            </FrameLayout>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/icon_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_10dp"
+            android:src="@drawable/icon_back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon_back_arrow"
+            android:text="Back"
+            android:textColor="#4C2170"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/next_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/icon_right_arrow"
+            android:text="Next"
+            android:textColor="#4C2170"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/icon_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10dp"
+            android:layout_alignParentRight="true"
+            android:rotation="180"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_back_arrow" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

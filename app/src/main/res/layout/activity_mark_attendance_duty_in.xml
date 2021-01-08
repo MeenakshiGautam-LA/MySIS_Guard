@@ -1,0 +1,485 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layoutRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEAF6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hundred_fifty_dp"
+                android:background="@drawable/gradient">
+
+
+                <ImageView
+                    android:id="@+id/security_guard_icon_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_left_10dp"
+                    android:paddingTop="@dimen/padding_top_10dp"
+                    android:src="@drawable/icon_security_guard_one" />
+
+                <TextView
+                    android:id="@+id/badges_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/security_guard_icon_one"
+                    android:paddingTop="@dimen/padding_top_20dp"
+                    android:text="4+ Badges"
+                    android:textColor="@color/white" />
+
+
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/badges_txt"
+                    android:layout_toRightOf="@id/security_guard_icon_one"
+                    android:numStars="5"
+                    android:progressTint="#EFCE4A"
+                    android:rating="3" />
+
+                <FrameLayout
+                    android:id="@+id/notificationFramLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_right_16dp"
+                    android:paddingTop="@dimen/padding_top_20dp">
+
+                    <ImageView
+                        android:id="@+id/icon_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_notification" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/circle_red_img" />
+
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/current_duty_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/todayShiftDetailCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_10dp"
+                    android:layout_marginTop="@dimen/margin_top_82dp"
+                    android:layout_marginRight="@dimen/margin_right_10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="14dp"
+                    app:contentPadding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/current_duty_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/current_duty_txt"
+                            android:textColor="#281F2D" />
+
+
+                        <TextView
+                            android:id="@+id/todayShiftNameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/light_yellow"
+                            android:padding="@dimen/padding_10dp"
+                            android:text="@string/shift_a_txt"
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:id="@+id/deployNameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/current_duty_txt"
+                            android:text="@string/sbi_bank_txt"
+                            android:textColor="#695C70" />
+
+
+                        <TextView
+                            android:id="@+id/postNameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/deployNameTV"
+                            android:text="Maingate SS"
+                            android:textColor="#A799B7" />
+
+
+                        <TextView
+                            android:id="@+id/todayDateTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/deployNameTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="@dimen/padding_left_20dp"
+                            android:paddingTop="@dimen/padding_top_20dp"
+                            android:paddingRight="5dp"
+                            android:text="Thursday"
+                            android:textColor="#A799B7"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/todayShiftStartTimeTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/todayDateTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="10:00"
+                            android:textColor="@color/app_default_color"
+                            android:textSize="@dimen/thirty_eight_sp" />
+
+                        <TextView
+                            android:id="@+id/lateAttendance_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/todayShiftStartTimeTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/red_Color"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                        <TextView
+                            android:id="@+id/todayTimePeroidTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/todayDateTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/fifteen_dp"
+                            android:layout_marginTop="@dimen/fifteen_dp"
+                            android:layout_toRightOf="@id/todayShiftStartTimeTV"
+                            android:text="A.M"
+                            android:textColor="@color/_light_black"
+                            android:textSize="12dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/lateAttendance_TV"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/dutyInBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lateAttendance_TV"
+        android:layout_marginTop="@dimen/tenDip"
+        android:background="@drawable/background_border_app_bg"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="@dimen/tenDip"
+        android:text="Duty In"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/dutyOutBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lateAttendance_TV"
+        android:layout_marginLeft="@dimen/twentyDip"
+        android:layout_marginTop="@dimen/tenDip"
+        android:layout_toRightOf="@id/dutyInBTN"
+        android:background="@drawable/light_grey_round_background"
+        android:enabled="false"
+        android:paddingLeft="30dp"
+        android:layout_marginBottom="@dimen/tenDip"
+        android:paddingRight="30dp"
+        android:layout_centerInParent="true"
+        android:text="Duty Out"
+        android:textColor="#A799B7" />
+</LinearLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/nextDayShiftDetailCV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#FCFCFC"
+                    app:cardCornerRadius="14dp"
+                    app:contentPadding="20dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/next_duty_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Next Duty" />
+
+
+                        <TextView
+                            android:id="@+id/nextDayShiftNameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/light_yellow"
+                            android:padding="10dp"
+                            android:text="Shift B"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/nextDayDeployNameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/next_duty_txt"
+                            android:text=" Dle Unit"
+                            android:textColor="#A799B7" />
+
+
+                        <TextView
+                            android:id="@+id/nextDayPostNameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nextDayDeployNameTV"
+                            android:text="Maingate SS"
+                            android:textColor="#A799B7" />
+
+
+                        <TextView
+                            android:id="@+id/nextDayDateTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nextDayDeployNameTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="30dp"
+                            android:text="Thursday"
+                            android:textColor="#A799B7"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/nextDayShiftStartTimeTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nextDayDateTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="10:00"
+                            android:textColor="@color/text_color_heading"
+                            android:textSize="@dimen/twenty_four_sp" />
+
+                        <TextView
+                            android:id="@+id/nextDayTimePeroidTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nextDayDateTV"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/fifteen_dp"
+                            android:layout_marginTop="@dimen/tenDip"
+                            android:layout_toRightOf="@id/nextDayShiftStartTimeTV"
+                            android:text="A.M"
+                            android:textColor="@color/_light_black"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/markOtherDutyRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/activity_my_task_bottom_linear_layout"
+            android:background="#DCD7E3"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/security_guard_one_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_security_guard_one" />
+
+                <ImageView
+                    android:id="@+id/security_guard_two_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_security_guard_one" />
+
+                <ImageView
+                    android:id="@+id/security_guard_three_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_security_guard_one" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_right_10dp"
+                android:layout_toLeftOf="@id/other_duty_icon_right_arrow"
+                android:text="Other Duty"
+                android:textColor="#4C2170" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/other_duty_icon_right_arrow"
+                android:layout_width="@dimen/twenty_fourDp"
+                android:layout_height="@dimen/twenty_fourDp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_right_arrow" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_my_task_bottom_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_15dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/activity_my_task_bottom_installation_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/activity_my_task_installation_img"
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/icon_duty" />
+
+
+                <TextView
+                    android:id="@+id/activity_my_task_installation_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/duty_txt"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_txt_color"
+                    android:textSize="@dimen/txt_size_10sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/activity_my_task_bottom_conveyance_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/activity_my_task_conveyance_img"
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/icon_calendar" />
+
+                <TextView
+                    android:id="@+id/activity_my_task_conveyance_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/calendar_txt"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_txt_color"
+                    android:textSize="@dimen/txt_size_10sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/activity_mark_attendance_duty_in_menu_linearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/activity_mark_attendance_duty_in_menu_img"
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/icon_menu" />
+
+                <TextView
+                    android:id="@+id/activity_mark_attendance_duty_in_menu_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top_5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/menu_txt"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_txt_color"
+                    android:textSize="@dimen/txt_size_10sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

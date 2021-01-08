@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/backPressLY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/five_dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_10dp"
+                app:srcCompat="@drawable/icon_back_arrow" />
+
+            <TextView
+                style="@style/customEditTextSearch_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/tenDip"
+                android:text="@string/check_Update"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundred_fifty_dp"
+            android:layout_marginTop="@dimen/hundred_dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@drawable/check_update_icon" />
+
+        <TextView
+            android:id="@+id/avaliableDesTV"
+            style="@style/customEditTextSearch_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twentyFiveDip"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/appVersionTV"
+            style="@style/customEditTextSearch_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/tenDip"
+            android:gravity="center"
+            android:textColor="@color/radioButtonTextColorGrey" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkUpdateBTN"
+        style="@style/customEditTextSearch_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tenDip"
+        android:background="@drawable/background_border_app_bg"
+        android:text="@string/check_for_update"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/downloadUpdateBTN"
+        style="@style/customEditTextSearch_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tenDip"
+        android:background="@drawable/background_border_app_bg"
+        android:text="@string/download_update"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>

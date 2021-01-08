@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sisindia.mysis">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" /> <!-- Sync start -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission
+        android:name="android.permission.CONTROL_LOCATION_UPDATES"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        tools:node="replace" /> <!-- Sync end -->
+    <application
+        android:name="com.sisindia.mysis.application.CSApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:process=":sync"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/DigitalAppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"><!--android:vmSafeMode="true"-->
+
+       <!-- android:theme="@style/AppTheme.NoActionBar.Transparent"-->
+        <activity
+            android:name=".activity.base.ApplicationDescriptionSecond"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sisindia.mysis.activity.SignInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- android:configChanges="uiMode"
+              android:theme="@style/DigitalAppTheme_Android_Q"-->
+        <activity
+            android:name="com.sisindia.mysis.activity.MainActivity_Guard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.sisindia.mysis.activity.Term_Condition_Page"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.sisindia.mysis.activity.Application_Description_Screen"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <provider
+            android:name="com.sisindia.mysis.syncdata.DBProvider"
+            android:authorities="com.sisindia.mysis"
+            android:exported="false"
+            android:syncable="true" />
+        <provider
+            android:name="com.sisindia.mysis.syncdata.DBProvider2"
+            android:authorities="com.sisindia.mysis"
+            android:exported="false"
+            android:syncable="true" />
+        <!--
+       This service implements our SyncAdapter. It needs to be exported, so that the system
+       sync framework can access it.
+        -->
+        <service
+            android:name="com.sisindia.mysis.syncdata.SyncService"
+            android:exported="true">
+
+            <!--
+            This intent filter is required. It allows the system to launch our sync service
+            as needed.
+            -->
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <!-- This points to a required XML file which describes our SyncAdapter. -->
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+        <service
+            android:name="com.sisindia.mysis.syncdata.SyncServiceGetadata"
+            android:exported="true">
+
+            <!--
+            This intent filter is required. It allows the system to launch our sync service
+            as needed.
+            -->
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <!-- This points to a required XML file which describes our SyncAdapter. -->
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadaptertwo" />
+        </service>
+        <service
+            android:name="com.sisindia.mysis.syncdata.GenericAccountService"
+            android:exported="false">
+
+            <!-- Required filter used by the system to launch our account service. -->
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <!-- This points to an XMLf ile which describes our account service. -->
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <receiver android:name="com.sisindia.mysis.syncdata.BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+
+        <activity
+            android:name="com.sisindia.mysis.BadgeActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.YourBadge"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+
+        <activity
+            android:name="com.sisindia.mysis.YourBadgeDetails"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.ChangeContactNumberActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+
+
+        <activity
+            android:name="com.sisindia.mysis.LanguageActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+
+        <activity
+            android:name="com.sisindia.mysis.ChangePinActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.MarkDutyRejectedActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+
+        <activity
+            android:name="com.sisindia.mysis.FaqHelpActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity android:name="com.sisindia.mysis.OtherDutyActionActivity" />
+        <activity
+            android:name="com.sisindia.mysis.CalendarLeaveActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.PunctualActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.HelpActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.CalendarActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.activity.SelfieActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.Sync_landing_img"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.SyncDataActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity android:name="com.sisindia.mysis.AnnualKitReplacmentActivity" />
+        <activity android:name="com.sisindia.mysis.Reminder_thirtyMinute" />
+        <activity
+            android:name="com.sisindia.mysis.LoanRequested"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.SulabhLoanActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity android:name="com.sisindia.mysis.MainActivity" />
+        <activity
+            android:name="com.sisindia.mysis.HelpNoRaisedGrievanceActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.HelpRaiseIssueActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity android:name="com.sisindia.mysis.HelpRaiseIssueDescriptionActivity" />
+        <activity android:name="com.sisindia.mysis.MarkAttendanceFitFaceActivity" />
+        <activity
+            android:name="com.sisindia.mysis.HelpContactUsActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.HelpTakeTourActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity android:name="com.sisindia.mysis.SalarySlipActivity" />
+        <activity android:name="com.sisindia.mysis.MarkAttendanceScanQrCodeActivity" />
+        <activity
+            android:name="com.sisindia.mysis.SalarySlipLandingActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.SalaryNoSlipActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.CalendarDayWiseDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.CalendarDayWisePlannedDutyActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" /> <!-- <activity android:name=".CalendarActivity"/> -->
+        <activity
+            android:name="com.sisindia.mysis.HelpMarkAttendanceFlowClickDutyInActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.MarkAttendanceFlowCloseWindowActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.MarkAttendanceFlowSubmitSelfieActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity android:name="com.sisindia.mysis.FAQLandingActivity" />
+        <activity
+            android:name="com.sisindia.mysis.HelpIssueActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.HelpIssueChatActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.HelpIssueDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.MarkAttendanceScanCode"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.activity.MarkDuty_Confirmation_ViewScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.MarkAttendanceDutyOutActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" /> <!-- android:theme="@style/AppTheme.NoActionBar.SplashScreen" > -->
+        <activity
+            android:name="com.sisindia.mysis.MarkAttendanceConfirmDutyActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.ProfileLandingActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.OtherDutyActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <activity
+            android:name="com.sisindia.mysis.LeaveActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+
+        <activity
+            android:name="com.sisindia.mysis.LeaveOneDayActivity"
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
+        <!--To Handle Issue Below-->
+        <!--        WorkManager is not initialized properly.  The most likely cause is that you disabled WorkManagerInitializer-->
+        <!--        in your manifest but forgot to call-->
+        <!--        WorkManager#initialize in your Application#onCreate or a ContentProvider.-->
+        <!--        <provider-->
+        <!--            android:name="androidx.work.impl.WorkManagerInitializer"-->
+        <!--            android:authorities="${applicationId}.workmanager-init"-->
+        <!--            tools:node="remove"-->
+        <!--            android:exported="false" />-->
+
+
+        <service
+            android:name="com.sisindia.mysis.Services.TrackingService"
+            android:enabled="true" />
+        <service
+            android:name="com.sisindia.mysis.Services.ServiceTrackMarkByOtherDuty_15minutes"
+            android:enabled="true" />
+        <!-- <receiver
+             android:name="com.sisindia.mysis.Services.StartReceiver">
+             <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+             </intent-filter>
+         </receiver>-->
+
+        <!--        FCM-->
+        <service
+            android:name="com.sisindia.mysis.Services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+       Set custom default icon. This is used when no icon is set for incoming notification messages.
+           See README(https://goo.gl/l4GJaQ) for more.
+              -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" /> <!-- Sync -->
+        <receiver android:name="com.sisindia.mysis.syncdata.BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <service android:name="com.sisindia.mysis.Services.BackgroundApiService" />
+    </application>
+
+</manifest>

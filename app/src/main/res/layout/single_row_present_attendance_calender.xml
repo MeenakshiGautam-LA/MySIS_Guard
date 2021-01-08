@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/five_dp"
+        app:cardCornerRadius="@dimen/five_dp"
+        app:cardElevation="@dimen/ten_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/un_sync_Des_LY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/un_sync_data"
+                android:orientation="horizontal"
+                android:padding="@dimen/five_dp">
+
+                <ImageView
+                    android:layout_width="@dimen/twentyFiveDip"
+                    android:layout_height="@dimen/twentyFiveDip"
+                    android:src="@drawable/no_image_found" />
+
+                <TextView
+                    style="@style/regularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:text="Unsynced data"
+                    android:textColor="@color/red_Color"
+                    android:textSize="@dimen/twelve_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/noTodayRosterTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/hundred_dp"
+                    android:text="@string/noToday_Roster"
+                    android:textColor="@color/text_color_heading"
+                    android:textSize="@dimen/fourteen_sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/todayRosterLY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/unitFoundDesTV"
+                        style="@style/regularText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="aaaa"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:textColor="@color/app_default_red_color"
+                        android:textSize="@dimen/fortten_sp" />
+
+                    <TextView
+                        android:id="@+id/todayShiftStartTimeTV"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_below="@+id/unitFoundDesTV"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/twenty_eight_sp" />
+
+                    <TextView
+                        android:id="@+id/todayTimePeroidTV"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/unitFoundDesTV"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/twentyDip"
+                        android:layout_toRightOf="@id/todayShiftStartTimeTV"
+                        android:gravity="center"
+                        android:text="A.M"
+                        android:textColor="@color/_light_black"
+                        android:textSize="@dimen/thirteen_sp" />
+
+
+                    <TextView
+                        android:id="@+id/todayShiftNameTV"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/tenDip"
+                        android:background="@drawable/shift_green_bg_color"
+                        android:padding="@dimen/five_dp"
+                        android:text="Shift A"
+                        android:textColor="#119A4D"
+                        android:textSize="@dimen/tweelve_sp" />
+
+                    <TextView
+                        android:id="@+id/unitNameTV"
+                        style="@style/regularText"
+                        android:layout_width="@dimen/two_hundred_fifty_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/todayShiftStartTimeTV"
+                        android:layout_marginTop="@dimen/tenDip"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:text="aaaaaa"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/twelve_sp" />
+
+                    <LinearLayout
+                        android:id="@+id/regoLY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:layout_below="@+id/unitNameTV"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/unitCodeTV"
+                            style="@style/regularText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/ten_dp"
+                            android:text="DEL-UNT 1111"
+                            android:textColor="@color/Weekly_OFF_leave_color"
+                            android:textSize="@dimen/fortten_sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/regoLY"
+                        android:id="@+id/postLY"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Post"
+                            style="@style/regularText"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/twelve_sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:id="@+id/postNameTV"
+                            style="@style/regularText"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/twelve_sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/post_rank"
+                            style="@style/regularText"
+                            android:layout_marginLeft="@dimen/twentyDip"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/twelve_sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:id="@+id/rankName_Tv"
+                            style="@style/regularText"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/twelve_sp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/text_color_hint"
+                        android:layout_below="@+id/postLY"
+                        android:id="@+id/view"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_height="@dimen/oneDp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view"
+                        android:padding="@dimen/ten_dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/duty_in"
+                            android:textColor="@color/grey"
+                            style="@style/regularText"
+                            android:textSize="@dimen/twelve_sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:id="@+id/dutyInTimeTV"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/twelve_sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/duty_out"
+                            android:textColor="@color/grey"
+                            style="@style/regularText"
+                            android:layout_marginLeft="@dimen/twentyDip"
+                            android:textSize="@dimen/twelve_sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:id="@+id/dutyOutTimeTV"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/twelve_sp" />
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

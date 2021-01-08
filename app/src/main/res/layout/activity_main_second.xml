@@ -1,0 +1,509 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEAF6">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            android:background="@drawable/gradient">
+
+
+            <ImageView
+                android:id="@+id/security_guard_icon_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_security_guard_one"
+                android:paddingTop="@dimen/padding_top_10dp"
+                android:paddingLeft="@dimen/padding_left_10dp"
+
+              />
+
+            <TextView
+                android:id="@+id/badges_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_top_20dp"
+                android:layout_toRightOf="@id/security_guard_icon_one"
+                android:text="4+ Badges"
+                android:textColor="@color/white"
+                />
+
+
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:rating="3"
+                android:numStars="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/badges_txt"
+                android:layout_toRightOf="@id/security_guard_icon_one"
+                android:progressTint="#EFCE4A"
+                />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_right_16dp"
+                android:paddingTop="@dimen/padding_top_20dp"
+                >
+
+            <ImageView
+                android:id="@+id/icon_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_notification"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_red_img"
+                    android:layout_gravity="right"/>
+
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/current_duty_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_10dp"
+                android:layout_marginTop="@dimen/margin_top_82dp"
+                android:layout_marginRight="@dimen/margin_right_10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="14dp"
+                app:contentPadding="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/current_duty_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/current_duty_txt"
+                        android:textColor="#281F2D" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shift_a_txt"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/light_yellow"
+                        android:padding="@dimen/padding_10dp"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/sbi_bank_dle_unit_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/current_duty_txt"
+                        android:text="@string/sbi_bank_txt"
+                        android:textColor="@color/text_color_heading" />
+
+                    <TextView
+                        android:id="@+id/dle_unit_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/current_duty_txt"
+                        android:layout_toRightOf="@id/sbi_bank_dle_unit_txt"
+                        android:text="  Dle Unit"
+                        android:textColor="@color/day_txt_color" />
+
+
+                    <TextView
+                        android:id="@+id/maingate_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sbi_bank_dle_unit_txt"
+                        android:text="Maingate SS"
+                        android:textColor="@color/text_color_hint"/>
+
+
+                    <TextView
+                        android:id="@+id/day_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sbi_bank_dle_unit_txt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="@dimen/padding_top_20dp"
+                        android:paddingLeft="@dimen/padding_left_20dp"
+                        android:paddingRight="5dp"
+                        android:text="Thursday"
+                        android:textColor="#A799B7"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/date_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sbi_bank_dle_unit_txt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="20dp"
+                        android:layout_toRightOf="@id/day_txt"
+                        android:text="6 Feb"
+                        android:textColor="#A799B7"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:id="@+id/time_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/day_txt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="10:00"
+                        android:textColor="#4C2170"
+                        android:textSize="52dp" />
+
+                    <TextView
+                        android:id="@+id/time_am_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/day_txt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="28dp"
+                        android:layout_toRightOf="@id/time_txt"
+                        android:text="A.M"
+                        android:textColor="#5A5361"
+                        android:textSize="12dp" />
+
+
+                    <Button
+                        android:id="@+id/duty_in_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/time_txt"
+                        android:layout_marginLeft="60dp"
+                        android:background="@drawable/background_border_app_bg"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="Duty In"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/duty_off_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/time_txt"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/duty_in_btn"
+                        android:background="@drawable/light_grey_round_background"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="Duty Out"
+                        android:textColor="#A799B7" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardBackgroundColor="#FCFCFC"
+                app:cardCornerRadius="14dp"
+                app:contentPadding="20dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/next_duty_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next Duty" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shift B"
+                        android:layout_alignParentRight="true"
+                        android:background="#FCFAC3"
+                        android:padding="10dp"
+                        android:textColor="#000000" />
+
+
+                    <TextView
+                        android:id="@+id/sbi_bank_dle_unit_txt_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/next_duty_txt"
+                        android:text="Axis Bank"
+                        android:textColor="#695C70" />
+
+                    <TextView
+                        android:id="@+id/dle_unit_txt_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/next_duty_txt"
+                        android:layout_toRightOf="@id/sbi_bank_dle_unit_txt_second"
+                        android:text=" Dle Unit"
+                        android:textColor="#A799B7" />
+
+
+                    <TextView
+                        android:id="@+id/maingate_txt_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sbi_bank_dle_unit_txt_second"
+                        android:text="Maingate SS"
+                        android:textColor="#A799B7" />
+
+
+                    <TextView
+                        android:id="@+id/day_txt_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sbi_bank_dle_unit_txt_second"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="30dp"
+                        android:text="Thursday"
+                        android:textColor="#A799B7"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/date_txt_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sbi_bank_dle_unit_txt_second"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@id/day_txt_second"
+                        android:text="6 Feb"
+                        android:textColor="#A799B7"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:id="@+id/time_txt_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/day_txt_second"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="10:00"
+                        android:textColor="#4C2170"
+                        android:textSize="52dp" />
+
+                    <TextView
+                        android:id="@+id/time_am_txt_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/day_txt_second"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_toRightOf="@id/time_txt_second"
+                        android:text="A.M"
+                        android:textColor="#5A5361"
+                        android:textSize="12dp" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_my_task_bottom_linear_layout"
+        android:background="#DCD7E3"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                android:id="@+id/security_guard_one_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_security_guard_one"
+               />
+
+            <ImageView
+                android:id="@+id/security_guard_two_icon"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_security_guard_one"
+                />
+
+            <ImageView
+                android:id="@+id/security_guard_three_icon"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_security_guard_one"
+              />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_right_10dp"
+            android:layout_toLeftOf="@id/icon_right_arrow"
+            android:text="Other Duty"
+            android:textColor="#4C2170" />
+
+
+        <ImageView
+            android:id="@+id/icon_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_right_arrow" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_my_task_bottom_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_15dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/activity_my_task_bottom_installation_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/activity_my_task_installation_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_duty" />
+
+
+            <TextView
+                android:id="@+id/activity_my_task_installation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/duty_txt"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_txt_color"
+                android:textSize="@dimen/txt_size_10sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/activity_my_task_bottom_conveyance_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_my_task_conveyance_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_calendar" />
+
+            <TextView
+                android:id="@+id/activity_my_task_conveyance_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/calendar_txt"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_txt_color"
+                android:textSize="@dimen/txt_size_10sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/activity_mark_attendance_duty_in_menu_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_mark_attendance_duty_in_menu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_menu" />
+
+            <TextView
+                android:id="@+id/activity_mark_attendance_duty_in_menu_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/menu_txt"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_txt_color"
+                android:textSize="@dimen/txt_size_10sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

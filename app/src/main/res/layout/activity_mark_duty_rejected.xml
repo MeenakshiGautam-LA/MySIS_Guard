@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MarkDutyRejectedActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:id="@+id/toolbar_title_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_10dp"
+                android:src="@drawable/icon_back_arrow" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/back"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/eighteen_sp" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/thirtyDp"
+                android:text="@string/mark_duty_rejected"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twenty_four_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tenDip"
+                android:text="sunday, 12 Jan"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/eighteen_sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tenDip"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/badge_img"
+                    android:layout_width="@dimen/hundred_fifty_dp"
+                    android:layout_height="@dimen/hundred_fifty_dp"
+                    android:layout_gravity="center|top"
+                    android:src="@drawable/profile_img" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/badge_img2"
+                    android:layout_width="@dimen/twentyDip"
+                    android:layout_height="@dimen/twentyDip"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="@dimen/sixty_eight_dp"
+                    android:layout_marginTop="@dimen/hundred_dp"
+                    android:src="@drawable/red_warning" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tenDip"
+                android:text="Ramesh Singh"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/twenty_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tenDip"
+                android:text="Guard - SO"
+                android:textColor="@color/text_color_hint"
+                android:textSize="@dimen/tweelve_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/thirtyDp"
+                android:text="Shift - A  8 AM"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/twenty_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tenDip"
+                android:text="Axis Bank : UNT 12056"
+                android:textColor="@color/text_color_hint"
+                android:textSize="@dimen/tweelve_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tenDip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Post"
+                        android:textColor="@color/text_color_hint"
+                        android:textSize="@dimen/tweelve_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:gravity="center"
+                        android:text="Main Gate"
+                        android:textColor="@color/text_color_heading"
+                        android:textSize="@dimen/tweelve_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tenDip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Post Rank"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/tweelve_sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:text="SO"
+                        android:textColor="@color/text_color_heading"
+                        android:textSize="@dimen/tweelve_sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/oneDp"
+                android:layout_marginLeft="@dimen/thirtyDp"
+                android:layout_marginTop="@dimen/thirtyDp"
+                android:layout_marginRight="@dimen/thirtyDp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tenDip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/duty_in_time"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/tweelve_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/tenDip"
+                    android:text="7:45 AM"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/tweelve_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tenDip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/lat_lang"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/eighteen_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/tenDip"
+                    android:text="40.7446555,-88.66654"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/tweelve_sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/thirtyDp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/raise_concern_btn"
+                    android:layout_width="@dimen/hundred_fifty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_purple_border_bg"
+                    android:text="@string/raise_concern"
+                    android:textColor="@color/text_color_sign_using_regis"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/call_supervisor_btn"
+                    android:layout_width="@dimen/hundred_fifty_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/tenDip"
+                    android:background="@drawable/next_button_purple_background"
+                    android:text="@string/call_supervisor"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteen_sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

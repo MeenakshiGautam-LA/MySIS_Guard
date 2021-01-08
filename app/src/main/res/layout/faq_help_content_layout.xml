@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/five_dp"
+        app:cardElevation="@dimen/oneDp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/sixteen_dp"
+                android:paddingBottom="@dimen/sixteen_dp">
+
+                <TextView
+                    android:id="@+id/help_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/sixteen_dp"
+                    android:layout_marginRight="@dimen/fourty_dp"
+                    android:text="This is dumy text for question"
+                    android:textColor="@color/text_color_heading"
+                    android:textSize="@dimen/tweelve_sp" />
+
+                <ImageView
+                    android:id="@+id/drowpDown"
+                    android:layout_width="@dimen/tweelve_sp"
+                    android:layout_height="@dimen/tweelve_sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/sixteen_dp"
+                    android:src="@drawable/drop_down" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/help_full_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/sixteen_dp"
+                android:layout_marginRight="@dimen/fourty_dp"
+                android:text="This is dumy text for question"
+                android:textColor="@color/text_color_heading"
+                android:textSize="@dimen/tweelve_sp" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oneDp"
+        android:background="@color/gray" />
+</LinearLayout>

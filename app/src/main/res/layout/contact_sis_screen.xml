@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@drawable/background_gredient"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/backPressLY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp">
+
+        <ImageView
+            android:id="@+id/backPressIV"
+            android:layout_width="@dimen/sixteenDP"
+            android:layout_height="@dimen/sixteenDP"
+            android:rotation="180"
+            android:tint="@color/black"
+            android:src="@drawable/white_arrow" />
+
+        <TextView
+            style="@style/regularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:padding="@dimen/two_dp"
+            android:text="Contact SIS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fortten_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="vertical"
+        android:padding="@dimen/ten_dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Talk to help center"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/fifteen_sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/two_dp"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/two_dp"
+            android:elevation="@dimen/sevenDp"
+            app:cardCornerRadius="@dimen/sevenDp"
+            app:cardElevation="@dimen/sevenDp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/five_dp">
+
+                <TextView
+                    android:id="@+id/txt_helpNumber"
+                    style="@style/lightText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:padding="@dimen/five_dp"
+                    android:text="Help Center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twelve_sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/ten_dp">
+
+                    <TextView
+                        android:id="@+id/helpLineNo_TV"
+                        style="@style/regularText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="1800-2560-2564"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/fortten_sp" />
+
+                    <TextView
+                        android:id="@+id/call_to_helpLine"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/call"
+                        android:textAllCaps="true"
+                        android:textColor="@color/guard_bottom_red_bg"
+                        android:textSize="@dimen/sixteen_sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seniorDetail_Main_LY"
+    android:orientation="vertical">
+    <TextView
+        style="@style/regularText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Talk to your seniors"
+        android:textColor="@color/dark_black"
+        android:textSize="@dimen/fortten_sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/two_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/two_dp"
+        android:layout_marginBottom="@dimen/two_dp"
+        android:elevation="@dimen/sevenDp"
+        app:cardCornerRadius="@dimen/sevenDp"
+        app:cardElevation="@dimen/sevenDp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/ten_dp">
+
+            <LinearLayout
+                android:id="@+id/areaManager_Detail_LY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    style="@style/lightText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/five_dp"
+                    android:text="Area Manager"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twelve_sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/ten_dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/areaManager_IV"
+                        android:layout_width="@dimen/thirty_Six_dp"
+                        android:layout_height="@dimen/thirty_Six_dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center|top"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="@dimen/two_dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_toRightOf="@+id/areaManager_IV"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/areaManagerName_TV"
+                            style="@style/mediumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dark_black"
+                            android:textSize="@dimen/fortten_sp" />
+
+                        <TextView
+                            android:id="@+id/areaManagerContact_TV"
+                            style="@style/lightText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dark_black"
+                            android:textSize="@dimen/twelve_sp" />
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:id="@+id/call_To_AreaManager_TV"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="@dimen/five_dp"
+                        android:text="CALL"
+                        android:textColor="@color/guard_bottom_red_bg"
+
+                        android:textSize="@dimen/sixteen_sp" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:background="#EEEAF6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/superVisor_Detail_LY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    style="@style/lightText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twentyDip"
+                    android:padding="@dimen/five_dp"
+                    android:text="Supervisor"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twelve_sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/ten_dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/superVisor_IV"
+                        android:layout_width="@dimen/thirty_Six_dp"
+                        android:layout_height="@dimen/thirty_Six_dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center|top"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_toRightOf="@+id/superVisor_IV"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/superVisorName_TV"
+                            style="@style/mediumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dark_black"
+                            android:textSize="@dimen/fortten_sp" />
+
+                        <TextView
+                            android:id="@+id/superVisorContact_TV"
+                            style="@style/lightText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dark_black"
+                            android:textSize="@dimen/twelve_sp" />
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:id="@+id/call_To_Supervisor_TV"
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="@dimen/five_dp"
+                        android:text="CALL"
+                        android:textColor="@color/guard_bottom_red_bg"
+
+                        android:textSize="@dimen/sixteen_sp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

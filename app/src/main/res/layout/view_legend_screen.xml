@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_background"
+    android:paddingBottom="@dimen/fifteen_dp"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/fifteen_dp"
+            android:layout_height="@dimen/fifteen_dp"
+            android:layout_gravity="center"
+            android:background="@color/sickLeave" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:text="@string/sick_txt"
+            android:textColor="@color/text_color_heading"
+            android:textSize="@dimen/fourteen_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/fifteen_dp"
+            android:layout_height="@dimen/fifteen_dp"
+            android:layout_gravity="center"
+            android:background="@color/otherLeave" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:text="@string/other_reason_txt"
+            android:textColor="@color/text_color_heading"
+            android:textSize="@dimen/fourteen_sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/ten_dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/fifteen_dp"
+            android:layout_height="@dimen/fifteen_dp"
+            android:layout_gravity="center"
+            android:background="@color/family_emergencyLeave_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:text="@string/family_emergency_txt"
+            android:textColor="@color/text_color_heading"
+            android:textSize="@dimen/fourteen_sp" />
+    </LinearLayout>
+</LinearLayout>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       android:id="@+id/viewlegendRV"/>
+
+
+</LinearLayout>

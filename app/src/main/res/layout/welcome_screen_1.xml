@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="right"
+                android:background="@drawable/welcome_rounded" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_hand"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    style="@style/boldText"
+
+                    android:text="@string/now_mark_duty"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    style="@style/regularText"
+                    android:gravity="center"
+                    android:text="MySIS app empowers you to mark daily attendance yourself. Enables you to know your next duty shift and unit."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_duty_screen" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/khand_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_hand"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+
+            android:text="अब ड्यूटी अटेंडन्स लगाना हुआ सरल !"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_four_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="@dimen/sixteen_sp"
+            style="@style/khand_mediumText"
+            android:gravity="center"
+            android:text="MySIS ऐप के द्वारा आप अपनी डेली अटेंडन्स दर्ज कर सकते हैं और अपनी अगली ड्यूटी शिफ्ट एवं यूनिट की जानकारी प्राप्त कर सकते हैं |"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/welcome_screen1_BTN"
+            android:layout_width="@dimen/fifty_five_dp"
+            android:layout_height="@dimen/fifty_five_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/twentyDP"
+            android:background="@drawable/icon_forward"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="Approved">#008577</color>
+  <!--  <color name="colorPrimaryDark">#281F2D</color>-->
+
+    <color name="colorPrimaryDark">#333333</color>
+
+
+    <color name="colorAccent">#C33235</color>
+<!--    <color name="colorAccent">#D81B60</color>-->
+    <color name="black">#333333</color>
+    <color name="light_grey">#F0EEF3</color>
+    <color name="Dark_Red_Color">#8A0E3C</color>
+    <color name="splash_bg_color">#281F2D</color>
+    <color name="primary_txt_color">#281F2D</color>
+    <color name="txt_color">#4C2170</color>
+    <color name="top_bg_color">#9E0A0A</color>
+    <color name="day_txt_color">#A799B7</color>
+    <color name="bg_transparent_color">#80180E23</color>
+    <color name="white">#FFFFFF</color>
+    <color name="redPrimaryDarkColor">#A61717</color>
+    <color name="red_Color">#F10808</color>
+    <color name="white_dull">#94AAE2</color>
+    <color name="light_blue_card_view">#f6f9ff</color>
+    <color name="white_background"> #f2f2f2</color>
+
+    <color name="guard_bottom_red_bg">#C33235</color>
+    <color name="red_color">#FF0000</color>
+    <color name="light_black">#A4A4A4</color>
+    <color name="upper_light_black">#33333399</color>
+    <color name="duty_out_dark_mode_disable">#8B8A88</color>
+    <color name="white_night_mode">#ffffff</color>
+
+
+   <!-- <color name="app_default_red">#C33235</color>-->
+
+  <!--  <color name="white_background"> #f2f2f2</color>-->
+
+    <!-- color use by prabhat -->
+    <color name="gray">#B1B0B5</color>
+    <color name="grayprime">#EEEAF6</color>
+    <color name="dark_grey">#f2f2f2</color>
+    <color name="purple">#4F2474</color>
+    <color name="light_gray">#F3F2F7</color>
+    <color name="yellow">#FDE086</color>
+    <color name="back_color">#710e4e</color>
+    <color name="whiteDark">#F2F1F3</color>
+    <color name="radioButtonTextColorGrey">#241E1E</color>
+
+    <color name="text_color_heading">#695C70</color>
+    <color name="leave_request_rejected">#FF4E51</color>
+    <color name="present_background_color">#d1faf2</color>
+    <color name="leave_request_approved">#0FBE9C</color>
+    <color name="text_color_hint">#A799B7</color>
+  <!--  <color name="text_color_sign_using_regis">#4C2170</color>-->
+
+
+    <color name="text_color_sign_using_regis">#333333</color>
+
+    <color name="app_default_color">#4C2170</color>
+    <color name="dark_red">#8C2426</color>
+
+    <color name="app_default_red_color">#C33235</color>
+
+    <color name="color_bg_punctual_days">#EBEFFF</color>
+    <color name="color_bg_alert_badge">#FFFDEC</color>
+    <color name="color_bg_help_screen">#E2DDE6</color>
+    <color name="processing_color">#FFA14E</color>
+    <color name="_light_black">#5A5361</color>
+    <color name="light_yellow">#FCFAC3</color>
+    <color name="dialog_backGround_color">#180E23</color>
+    <color name="sickLeave">#f2dea4</color>
+    <color name="casualLeave">#def7fe</color>
+    <color name="absentLeave">#ffa180</color>
+    <color name="family_emergencyLeave_color">#ffa180</color>
+    <color name="otherLeave">#d2cbaf</color>
+    <color name="pending_for_approval">#d2cbaf</color>
+    <color name="planned_Leave_color">#00379a</color>
+    <color name="UN_Planned_Leave_color">#ff4949</color>
+    <color name="Tour_leave_color">#ffdba6</color>
+    <color name="Transfer_leave_color">#8de4b1</color>
+    <color name="Death_leave_color">#c8c6c6</color>
+    <color name="Weekly_OFF_leave_color">#000000</color>
+    <color name="Sick_leave_color">#f2dea4</color>
+    <color name="light_grey_txt_color">#333333</color>
+    <color name="shift_bg_color">#C6A708</color>
+    <color name="attendance_not_mark_backGround">#FFE1E1</color>
+
+
+
+
+    <!-- color use by meenakshi -->
+    <color name="grey_color">#ECECEC</color>
+    <color name="leave_color_calender">#FF0004</color>
+    <color name="hor_line_bg_color">#DDDDDD</color>
+    <color name="base_unit_bg_color">#f9ecb9</color>
+    <color name="next_duty_color_dashboard">#F6F27E</color>
+    <color name="night_mode_color">#353535</color>
+    <color name="night_mode_color_light">#707070</color>
+    <color name="light_black_grey">#D9D9D9</color>
+    <color name="op_white_color">#60FFFFFF</color>
+    <color name="app_update_dialog_background">#161616</color>
+    <color name="dark_black">#281F2D</color>
+    <color name="applied_leave">#FF8800</color>
+    <color name="approved_leave">#FF0000</color>
+    <color name="un_sync_data">#F6F27E</color>
+    <color name="present">#CAF5DD</color>
+    <color name="timer_green">#119A4D</color>
+    <color name="grey">#BCBCBC</color>
+    <color name="black_grey">#6E6E6E</color>
+    <color name="leave_apply_screen_">#33333380</color>
+    <color name="calender_text_color">#50333333</color>
+    <color name="app_button_border_color">#33333333</color>
+    <color name="sign_in_background_gradient_color">#FBFBFB</color>
+    <color name="mark_atten_op_bg">#57000000</color>
+    <color name="qr_code_op_bg">#41000000</color>
+
+</resources>

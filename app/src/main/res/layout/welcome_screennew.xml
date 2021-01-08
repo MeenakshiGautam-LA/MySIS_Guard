@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:padding="@dimen/twentyDip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sis_group_logo" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relative1"
+            android:background="@drawable/gradient_welcome"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/welcome_rounded" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:drawableEnd="@drawable/icon_hand"
+                        android:drawablePadding="4dp"
+                        android:text="@string/now_mark_duty"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/twenty_two_sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:text="MYSIS empowers you to mark your duty and enables you to know your next duty and unit."
+                        android:textColor="@color/op_white_color"
+                        android:textSize="@dimen/txt_size_14sp"
+                        style="@style/regularText"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/welcome_big_rounded"
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/icon_duty_screen" />
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/khand_semi_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableEnd="@drawable/icon_hand"
+                android:drawablePadding="4dp"
+                android:text="अब ड्यूटी अटेंडन्स लगाना हुआ सरल!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_20sp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                style="@style/khand_mediumText"
+                android:text="MYSIS के द्वारा आप अपनी ड्यूटी दर्ज कर सकते हैं और अपनी अगली ड्यूटी एवं यूनिट की जानकारी प्राप्त कर सकते हैं |"
+                android:textColor="@color/op_white_color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/welcome_screen1_BTN"
+            android:layout_width="@dimen/fifty_five_dp"
+            android:layout_height="@dimen/fifty_five_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/twentyDP"
+            android:background="@drawable/icon_forward"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

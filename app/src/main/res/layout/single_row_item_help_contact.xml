@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/two_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/two_dp"
+        android:elevation="@dimen/sevenDp"
+        app:cardCornerRadius="@dimen/sevenDp"
+        app:cardElevation="@dimen/sevenDp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/ten_dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five_dp"
+                android:text="Area Manager"
+                style="@style/lightText"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve_sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/ten_dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_logo"
+                    android:layout_width="@dimen/thirty_Six_dp"
+                    android:layout_height="@dimen/thirty_Six_dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center|top"
+                    android:src="@drawable/icon_guard"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_toRightOf="@+id/profile_logo"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/mediumText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pawan Kumar yadav"
+                        android:textColor="@color/primary_txt_color"
+                        android:textSize="@dimen/fortten_sp" />
+
+                    <TextView
+                        style="@style/lightText"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:text="Pawan Kumar yadav"
+                        android:textColor="@color/primary_txt_color"
+                        android:textSize="@dimen/twelve_sp" />
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/roboto_medium"
+                    style="@style/mediumText"
+                    android:textColor="@color/guard_bottom_red_bg"
+                    android:padding="@dimen/five_dp"
+                    android:text="CALL"
+
+                    android:textSize="@dimen/sixteen_sp" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="#EEEAF6" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

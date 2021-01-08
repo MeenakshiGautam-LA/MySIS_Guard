@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:layout_margin="12dp"
+    >
+
+
+   <!-- <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_back_arrow"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image1"
+        android:text="Grievance"
+       android:textColor="#695C70"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/view_all_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4C2170"
+        android:text="View All"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        />
+-->
+
+    <TextView
+        android:id="@+id/receive_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#695C70"
+        android:text="Did not Receive Salary"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/view_all_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A799B7"
+        android:text="10 Jan, 10:48 AM"
+               android:layout_below="@id/receive_text"
+       android:paddingLeft="10dp"
+      android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A799B7"
+        android:text="In Process"
+       android:paddingTop="10dp"
+        android:paddingRight="10dp"
+
+android:layout_alignParentRight="true"
+        />
+
+
+
+
+
+
+</RelativeLayout>

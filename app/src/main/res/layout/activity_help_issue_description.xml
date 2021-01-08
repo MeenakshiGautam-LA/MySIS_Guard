@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E2DDE6"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/icon_back_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon_back_arrow"
+            android:text="Raise Grievance"
+            android:textColor="#695C70"
+            android:layout_marginLeft="10dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon_back_arrow"
+        android:text="Salary"
+        android:textColor="#281F2D"
+        android:layout_marginLeft="10dp"
+        android:textSize="22dp"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangular_relative_bg"
+        android:paddingBottom="30dp"
+        >
+
+
+    <TextView
+        android:id="@+id/issue_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue"
+        android:textColor="#281F2D"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did not Receive Salary?"
+            android:textColor="#695C70"
+android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:layout_below="@id/issue_txt"
+            />
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangular_relative_bg"
+        android:paddingBottom="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/issue_secondtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Issue Description"
+            android:textColor="#281F2D"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your message here"
+            android:textSize="12dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="8dp"
+            android:textColorHint="#A799B7"
+            />
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_raise_grievance"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Raise Grievance"
+        android:textColor="#A799B7"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/raise_grievance_btn_bg"
+        android:layout_marginLeft="20dp" />
+
+</LinearLayout>

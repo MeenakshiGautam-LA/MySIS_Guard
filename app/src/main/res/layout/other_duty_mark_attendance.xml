@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layoutLY"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gredient"
+    android:visibility="visible">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/topLinearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/twentyDip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten_dp"
+
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/userImageCV"
+                                android:layout_width="@dimen/fourtyDp"
+                                android:layout_height="@dimen/fourtyDp"
+                                android:layout_marginLeft="@dimen/ten_dp"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="@dimen/two_dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/ten_dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="@dimen/two_dp"
+                                    android:layout_height="@dimen/ten_dp"
+                                    android:background="@color/text_color_hint" />
+
+                                <View
+                                    android:layout_width="@dimen/two_dp"
+                                    android:layout_height="@dimen/ten_dp"
+                                    android:layout_marginTop="@dimen/five_dp"
+                                    android:background="@color/text_color_hint" />
+
+                                <View
+                                    android:layout_width="@dimen/two_dp"
+                                    android:layout_height="@dimen/ten_dp"
+                                    android:layout_marginTop="@dimen/five_dp"
+                                    android:background="@color/text_color_hint" />
+
+                              <!--  android:background="@color/black"/>-->
+
+                                <View
+                                    android:layout_width="@dimen/two_dp"
+                                    android:layout_height="@dimen/ten_dp"
+                                    android:layout_marginTop="@dimen/five_dp"
+                                    android:background="@color/text_color_hint" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/fourtyDp"
+                                android:layout_height="@dimen/fourtyDp"
+                                android:layout_marginLeft="@dimen/ten_dp"
+                                android:layout_marginTop="@dimen/five_dp"
+                                android:src="@mipmap/location"
+                                app:tint="@color/app_default_red_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_marginTop="@dimen/ten_dp"
+
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.3"
+                                    android:gravity="left"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/userNameTV"
+                                        style="@style/boldText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/fortten_sp" />
+
+                                    <TextView
+                                        android:id="@+id/dutyRankNameTV"
+                                        style="@style/regularText"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/threeDip"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/twelve_sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.7"
+                                    android:gravity="right"
+                                    android:orientation="vertical"
+                                    android:padding="@dimen/fifteen_dp">
+
+                                    <ImageView
+                                        android:id="@+id/cancel_IV"
+                                        android:layout_width="@dimen/twentyFiveDip"
+                                        android:layout_height="@dimen/twentyFiveDip"
+                                        android:tint="@color/app_default_red_color"
+                                        app:srcCompat="@drawable/icon_cross" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/twentyDip"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/unitNameTV"
+                                    style="@style/mediumText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fortten_sp" />
+
+                                <TextView
+                                    android:id="@+id/unitCodeTV"
+                                    style="@style/regularText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/threeDip"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/fortten_sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/threeDip"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/postNameTV"
+                                    style="@style/regularText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/twelve_sp" />
+
+                                <TextView
+                                    android:id="@+id/postRankTV"
+                                    style="@style/regularText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/tenDip"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/twelve_sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    style="@style/mediumText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/threeDip"
+                                    android:paddingBottom="@dimen/five_dp"
+                                    android:text="@string/shift_name"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/twelve_sp" />
+
+                                <TextView
+                                    android:id="@+id/shiftNameTV"
+                                    style="@style/regularText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/five_dp"
+                                    android:layout_marginTop="@dimen/threeDip"
+                                    android:maxLines="2"
+                                    android:paddingBottom="@dimen/five_dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/twelve_sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/odma_reg_tv"
+                    style="@style/regularText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:text="Reg No"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteen_sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/reg_no_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_10dp"
+                    android:text="PAT0000000"
+                    android:textColor="@color/primary_txt_color"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:text="Unit Code"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/fourteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/unit_code_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_10dp"
+                    android:text="UNT-0000"
+                    android:textColor="@color/primary_txt_color"
+                    android:textSize="@dimen/sixteen_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:text="Unit Name"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/tweelve_sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/unit_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_10dp"
+                    android:text="SIS Corporate office, Oklhla"
+                    android:textColor="@color/primary_txt_color"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/lightText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:text="@string/select_shift"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/shift_RV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/single_row_shift_details" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/mediumText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:text="Emp Rank"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <TextView
+                    android:id="@+id/odma_emp_rank_tv"
+                    style="@style/regularText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_10dp"
+                    android:text="SG"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tweelve_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:text="Duty Rank"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/fourteen_sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/rank_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_5dp"
+                        android:textColor="@color/primary_txt_color"
+                        android:textSize="@dimen/sixteen_sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_10dp"
+                    android:layout_marginRight="@dimen/padding_10dp"
+                    android:background="@color/text_color_hint"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentyDip"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancelBTN"
+            style="@style/mediumText"
+            android:layout_width="@dimen/two_hundred_twenty_dp"
+            android:layout_height="@dimen/thirty_five_dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_purple_border_bg"
+            android:paddingLeft="@dimen/fourtyDp"
+            android:paddingRight="@dimen/fourtyDp"
+            android:text="@string/Cancel"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/twentyDip"
+            android:textAllCaps="true"
+            android:textColor="@color/app_default_red_color"
+            android:textSize="@dimen/tweelve_sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/otherDuty_IN_BTN"
+            style="@style/mediumText"
+            android:layout_width="@dimen/two_hundred_twenty_dp"
+            android:layout_height="@dimen/thirty_five_dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/background_border_red_app_bg"
+            android:paddingLeft="@dimen/fourtyDp"
+            android:paddingRight="@dimen/fourtyDp"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:layout_marginLeft="@dimen/twentyDip"
+            android:layout_marginRight="@dimen/twentyDip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tweelve_sp" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

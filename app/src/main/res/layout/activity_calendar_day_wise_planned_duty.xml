@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E2DDE6"  >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_back_arrow"
+        android:padding="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturday"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#695C70"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/icon_left_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_back_arrow"
+            />
+        <TextView
+            android:id="@+id/month_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feb 2020"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/icon_left_arrow"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/icon_right_arrow"
+            android:layout_toRightOf="@id/month_txt"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:background="#70FFFFFF"
+        android:layout_margin="20dp"
+        android:paddingBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00"
+            android:textSize="28dp"
+            android:textColor="#281F2D"
+            />
+
+        <TextView
+            android:id="@+id/am_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AM"
+            android:textSize="28dp"
+            android:textColor="#A799B7"
+            android:layout_toRightOf="@id/time_txt"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_shift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FCFAC3"
+            android:text="Shift A"
+            android:layout_alignBaseline="@id/time_txt"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#4C2170"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/bank_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Axis Bank"
+            android:layout_below="@id/time_txt"
+            android:textColor="#A799B7"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/unit_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DLE UNT 12345"
+            android:layout_below="@id/time_txt"
+            android:textColor="#695C70"
+            android:layout_toRightOf="@id/bank_txt"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="10dp"  />
+
+
+        <TextView
+            android:id="@+id/post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:layout_below="@id/bank_txt"
+            android:textColor="#A799B7"
+            />
+
+        <TextView
+            android:id="@+id/post_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Gate"
+            android:layout_below="@id/unit_txt"
+            android:textColor="#695C70"
+            android:layout_toRightOf="@id/post"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/post_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Rank"
+            android:layout_below="@id/unit_txt"
+            android:textColor="#A799B7"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/post_txt"   />
+
+        <TextView
+            android:id="@+id/post_rank_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SO"
+            android:layout_below="@id/unit_txt"
+            android:textColor="#695C70"
+            android:layout_toRightOf="@id/post_rank"
+            android:layout_marginLeft="5dp"
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#20A799B7"
+            android:layout_below="@id/post"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/duty_in_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duty In"
+            android:layout_below="@id/view"
+            android:textColor="#A799B7"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/duty_in_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:45 A.M"
+            android:layout_below="@id/view"
+            android:textColor="#695C70"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/duty_in_txt"/>
+
+        <TextView
+            android:id="@+id/duty_out_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duty Out"
+            android:layout_below="@id/view"
+            android:textColor="#A799B7"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/duty_in_time_txt"   />
+
+        <TextView
+            android:id="@+id/duty_out_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:45 A.M"
+            android:layout_below="@id/view"
+            android:textColor="#695C70"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/duty_out_txt"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:background="#70FFFFFF"
+        android:layout_margin="20dp"
+        android:paddingBottom="20dp"
+       android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/time_second_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 hr"
+            android:textSize="28dp"
+            android:textColor="#281F2D"
+            />
+
+        <TextView
+            android:id="@+id/extra_duty_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra Duty"
+            android:textColor="#A799B7"
+            android:layout_toRightOf="@id/time_second_txt"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/bank_second_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Axis Bank"
+            android:layout_below="@id/time_second_txt"
+            android:textColor="#A799B7"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/unit_second_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DLE UNT 12345"
+            android:layout_below="@id/time_second_txt"
+            android:textColor="#695C70"
+            android:layout_toRightOf="@id/bank_second_txt"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="10dp"  />
+
+
+        <TextView
+            android:id="@+id/post_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:layout_below="@id/bank_second_txt"
+            android:textColor="#A799B7"
+            />
+
+        <TextView
+            android:id="@+id/post_second_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Gate"
+            android:layout_below="@id/unit_second_txt"
+            android:textColor="#695C70"
+            android:layout_toRightOf="@id/post_second"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:id="@+id/post_rank_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Rank"
+            android:layout_below="@id/unit_second_txt"
+            android:textColor="#A799B7"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/post_second_txt"   />
+
+        <TextView
+            android:id="@+id/post_rank_second_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SO"
+            android:layout_below="@id/unit_second_txt"
+            android:textColor="#695C70"
+            android:layout_toRightOf="@id/post_rank_second"
+            android:layout_marginLeft="5dp"
+            />
+
+        <View
+            android:id="@+id/view_second"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#20A799B7"
+            android:layout_below="@id/post_second"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/duty_in_txt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duty In"
+            android:layout_below="@id/view_second"
+            android:textColor="#A799B7"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/duty_in_time_txt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:45 A.M"
+            android:layout_below="@id/view_second"
+            android:textColor="#695C70"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/duty_in_txt_second"/>
+
+        <TextView
+            android:id="@+id/duty_out_txt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duty Out"
+            android:layout_below="@id/view_second"
+            android:textColor="#A799B7"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/duty_in_time_txt_second"   />
+
+        <TextView
+            android:id="@+id/duty_out_time_txt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:45 A.M"
+            android:layout_below="@id/view_second"
+            android:textColor="#695C70"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/duty_out_txt_second"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

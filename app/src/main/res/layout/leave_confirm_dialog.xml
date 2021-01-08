@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="#666666"
+    android:orientation="vertical"
+    android:padding="@dimen/fifteen_dp">
+
+    <ImageView
+        android:id="@+id/cancelIV"
+        android:layout_width="@dimen/thirtyDp"
+        android:layout_height="@dimen/thirtyDp"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/twentyDip"
+        android:layout_marginRight="@dimen/fifteen_dp"
+        android:src="@drawable/cancel_grey_color" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fifteen_dp"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:layout_marginRight="@dimen/fifteen_dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/ten_dp"
+        app:cardElevation="@dimen/ten_sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/fifteen_dp">
+
+            <TextView
+                android:id="@+id/countLeaveDaysTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/ten_dp"
+                style="@style/mediumText"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="@dimen/fifteen_dp">
+
+                <TextView
+                    android:id="@+id/leave_dateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/regularText"
+                    android:textColor="@color/primary_txt_color"
+                    android:textSize="@dimen/twenty_eight_sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feb"
+                    android:textColor="#695C70"
+                    android:textSize="@dimen/txt_size_28sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/twentyDip"
+                android:background="@color/white_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginBottom="@dimen/fifteen_dp"
+                    android:text="@string/reason_for_leaves_txt"
+                    style="@style/mediumText"
+                    android:textColor="@color/radioButtonTextColorGrey"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/leavetypeRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:button="@drawable/radio_button_action"
+                        android:padding="@dimen/ten_dp"
+                        android:paddingLeft="@dimen/ten_sp"
+                        android:text="@string/sick_txt"
+                        android:textColor="@color/radioButtonTextColorGrey"
+                        android:textSize="@dimen/tweelve_sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:button="@drawable/radio_button_action"
+                        android:padding="@dimen/ten_dp"
+                        android:paddingLeft="@dimen/ten_sp"
+                        android:text="@string/family_emergency_txt"
+                        android:textColor="@color/radioButtonTextColorGrey"
+                        android:textSize="@dimen/tweelve_sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:button="@drawable/radio_button_action"
+                        android:padding="@dimen/ten_dp"
+                        android:paddingLeft="@dimen/ten_sp"
+                        android:text="@string/other_reason_txt"
+                        android:textColor="@color/radioButtonTextColorGrey"
+                        android:textSize="@dimen/tweelve_sp" />
+                </RadioGroup>
+            </LinearLayout>
+            <Button
+                android:id="@+id/leave_dialog_confirm_btn"
+                android:layout_width="@dimen/hundred_forty_five_dp"
+                android:layout_height="@dimen/thirty_five_dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="@dimen/twentyDip"
+                android:layout_marginBottom="@dimen/fifteen_dp"
+                android:background="@drawable/background_border_red_app_bg"
+                android:paddingLeft="@dimen/padding_left_30dp"
+                android:paddingRight="@dimen/padding_right_30dp"
+                android:text="@string/confirm_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_14sp" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

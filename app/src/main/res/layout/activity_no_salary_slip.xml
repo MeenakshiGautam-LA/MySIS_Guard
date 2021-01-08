@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#E2DDE6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/icon_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back_arrow"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back_arrow"
+            android:layout_toRightOf="@id/icon_back_arrow"
+           android:text="Salary Slip"
+            android:textSize="18dp"
+            android:textColor="#695C70"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/txt_salary_slip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salary Slip for January 2020 is not prepared."
+       android:layout_gravity="center_horizontal"
+     android:layout_marginTop="350dp"
+       android:textColor="#A799B7"
+        android:textSize="18dp"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

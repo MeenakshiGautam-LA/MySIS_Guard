@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_guard_nav_graph"
+    app:startDestination="@id/MPIN_Fragment2">
+
+
+    <fragment
+        android:id="@+id/MPIN_Fragment2"
+        android:name="com.sisindia.mysis.fragment.Verify_MPIN_Fragment"
+        android:label="MPIN_Fragment"
+        tools:layout="@layout/set_pin">
+
+        <action
+            android:id="@+id/action_MPIN_Fragment2_to_markAttendance"
+            app:destination="@id/markAttendance"
+            app:popUpTo="@+id/main_guard_nav_graph" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/markAttendance"
+        android:name="com.sisindia.mysis.fragment.MarkAttendance"
+        android:label="MarkAttendance"
+        tools:layout="@layout/activity_mark_attendance_duty_in">
+
+        <action
+            android:id="@+id/action_markAttendance_to_QR_Code_Scan"
+            app:destination="@id/QR_Code_Scan" />
+
+        <action
+            android:id="@+id/action_markAttendance_to_otherDuty_In_Out"
+            app:destination="@id/otherDuty_In_Out" />
+
+        <action
+            android:id="@+id/action_calendar_leave_present"
+            app:destination="@id/CalendarLeavePresent" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/QR_Code_Scan"
+        android:name="com.sisindia.mysis.fragment.QR_Code_Scan"
+        android:label="QR_Code_Scan"
+        tools:layout="@layout/qr_code_scanner" >
+        <action
+            android:id="@+id/action_QR_Code_Scan_to_otherDutyMarkAttendance"
+            app:destination="@id/otherDutyMarkAttendance" />
+        <action
+            android:id="@+id/action_QR_Code_Scan_to_capturePictureOfUser"
+            app:destination="@id/capturePictureOfUser" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/otherDuty_In_Out"
+        android:name="com.sisindia.mysis.fragment.OtherDuty_In_OutAction"
+        android:label="OtherDuty_In_Out"
+        tools:layout="@layout/other_duty_in_out_action">
+        <action
+            android:id="@+id/action_otherDuty_In_Out_to_otherDutyEmp_SearchBy_QR_CodeByRegno"
+            app:destination="@id/otherDutyEmp_SearchBy_QR_CodeByRegno" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/otherDutyEmp_SearchBy_QR_CodeByRegno"
+        android:name="com.sisindia.mysis.fragment.OtherDutyEmp_SearchBy_QR_CodeByRegno"
+        android:label="OtherDutyEmp_SearchBy_QR_CodeByRegno"
+        tools:layout="@layout/otherduty_emp_search">
+
+        <action
+            android:id="@+id/action_otherDutyEmp_SearchBy_QR_CodeByRegno_to_QR_Code_Scan"
+            app:destination="@id/QR_Code_Scan" />
+        <action
+            android:id="@+id/action_otherDutyEmp_SearchBy_QR_CodeByRegno_to_otherDutyMarkAttendance"
+            app:destination="@id/otherDutyMarkAttendance" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/guardProfile"
+        android:name="com.sisindia.mysis.fragment.GuardProfile"
+        android:label="GuardProfile"
+        tools:layout="@layout/profile_screen">
+
+        <action
+            android:id="@+id/action_guardProfile_to_changeAndForgetPin"
+            app:destination="@id/changeAndForgetPin" />
+
+        <action
+            android:id="@+id/action_guardProfile_to_changeContactNumber"
+            app:destination="@id/changeContactNumber" />
+        <action
+            android:id="@+id/action_guardProfile_to_contactSis"
+            app:destination="@id/contactSis" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/changeAndForgetPin"
+        android:name="com.sisindia.mysis.fragment.ChangeAndForgetPin"
+        android:label="ChangeAndForgetPin"
+        tools:layout="@layout/activity_change_pin">
+
+        <action
+            android:id="@+id/action_changeAndForgetPin_to_OTPFragment"
+            app:destination="@id/OTPFragment"
+            app:popUpTo="@+id/guardProfile" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.sisindia.mysis.fragment.OTPFragment"
+        android:label="OTPFragment"
+        tools:layout="@layout/otp_screen" />
+
+
+    <fragment
+        android:id="@+id/changeContactNumber"
+        android:name="com.sisindia.mysis.fragment.ChangeContactNumber"
+        android:label="ChangeContactNumber"
+        tools:layout="@layout/change_contact_number">
+
+        <action
+            android:id="@+id/action_changeContactNumber_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/CalendarLeavePresent"
+        android:name="com.sisindia.mysis.fragment.CalendarFragment"
+        tools:layout="@layout/activity_duty_leave_calendar"
+        android:label="CalendarLeavePresent" >
+        <action
+            android:id="@+id/action_leave_status_fragment"
+            app:destination="@id/LeaveStatusFragment" />
+        <action
+            android:id="@+id/action_total_leave_count_fragment"
+            app:destination="@id/totalLeaveCount" />
+        <action
+            android:id="@+id/action_duty_details_fragment"
+            app:destination="@id/DutyDetailFragment" />
+        <action
+            android:id="@+id/action_duty_roster_fragment"
+            app:destination="@id/DutyRosterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LeaveStatusFragment"
+        android:name="com.sisindia.mysis.fragment.LeaveStatusFragment"
+        tools:layout="@layout/activity_leave_landing"
+        android:label="LeaveStatusFragment" >
+        <action
+            android:id="@+id/action_calendar_employee_take_leave"
+            app:destination="@id/EmployeeTakeLeaveCalanderFragment" />
+        <action
+            android:id="@+id/action_leave_history_fragment_open"
+            app:destination="@id/LeaveHistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EmployeeTakeLeaveCalanderFragment"
+        android:name="com.sisindia.mysis.fragment.EmployeeTakeLeaveScreen"
+        tools:layout="@layout/fragment_employee_take_leave_calander"
+        android:label="EmployeeTakeLeaveCalanderFragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/LeaveHistoryFragment"
+        android:name="com.sisindia.mysis.fragment.LeaveHistoryFragment"
+        tools:layout="@layout/activity_leave_history"
+        android:label="LeaveHistoryFragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/totalLeaveCount"
+        android:name="com.sisindia.mysis.fragment.TotalLeaveCountFragment"
+        tools:layout="@layout/activity_calendar_leave"
+        android:label="totalLeaveCount" >
+        <action
+            android:id="@+id/action_CalendarLeavePresent_fragment_open"
+            app:destination="@id/CalendarLeavePresent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DutyDetailFragment"
+        android:name="com.sisindia.mysis.fragment.DutyDetailFragment"
+        tools:layout="@layout/activity_calendar_day_wise"
+        android:label="DutyDetailFragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/DutyRosterFragment"
+        android:name="com.sisindia.mysis.fragment.DutyRosterFragment"
+        tools:layout="@layout/activity_calendar_day_wise_planned_duty"
+        android:label="DutyRosterFragment" >
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheetDialog"
+        android:label="bottom_sheet"
+        tools:layout="@layout/bottom_menu_bar_layout"/>
+    <fragment
+        android:id="@+id/synServer"
+        android:name="com.sisindia.mysis.fragment.SynServer"
+        tools:layout="@layout/syn_server_layout"
+        android:label="SynServer" />
+       <fragment
+        android:id="@+id/otherDutyMarkAttendance"
+        android:name="com.sisindia.mysis.fragment.OtherDutyMarkAttendance"
+        tools:layout="@layout/other_duty_mark_attendance"
+        android:label="OtherDutyMarkAttendance" />
+    <fragment
+        android:id="@+id/checkUpdate"
+        android:name="com.sisindia.mysis.fragment.CheckUpdate"
+        tools:layout="@layout/check_update"
+        android:label="CheckUpdate" />
+    <fragment
+        android:id="@+id/notification"
+        tools:layout="@layout/activity_notification"
+        android:name="com.sisindia.mysis.fragment.Notification"
+        android:label="Notification" />
+    <fragment
+        android:id="@+id/capturePictureOfUser"
+        tools:layout="@layout/capture_image_of_user_layout"
+        android:name="com.sisindia.mysis.fragment.CapturePictureOfUser"
+        android:label="CapturePictureOfUser" />
+    <fragment
+        android:id="@+id/contactSis"
+        android:name="com.sisindia.mysis.fragment.ContactSis"
+        tools:layout="@layout/contact_sis_screen"
+        android:label="ContactSis" />
+
+
+</navigation>

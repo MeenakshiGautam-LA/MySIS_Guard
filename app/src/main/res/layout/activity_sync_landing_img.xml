@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sync_landing_img">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame_layout"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/hundred_ten_dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/twentyDP"
+            android:src="@drawable/sync_data_img"/>
+
+        <ImageView
+            android:layout_width="@dimen/sixty_twoDp"
+            android:layout_height="@dimen/thirtyDP"
+            android:layout_gravity="center"
+            android:src="@drawable/sync_data_arrow"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/frame_layout"
+        android:text="@string/trying_to_sync"
+        android:layout_marginLeft="@dimen/thirtyDP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/twentyDP"/>
+
+</RelativeLayout>

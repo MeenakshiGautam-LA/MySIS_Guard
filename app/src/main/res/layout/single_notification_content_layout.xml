@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layoutLY"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tenDip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/five_dp"
+        app:cardElevation="@dimen/tenDip"
+        app:contentPadding="@dimen/threeDip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/five_dp">
+
+            <ImageView
+                android:id="@+id/notificationImg"
+                android:layout_width="@dimen/thirtyDp"
+                android:layout_height="@dimen/thirtyDp"
+                android:layout_marginLeft="@dimen/tenDip"
+                android:layout_marginTop="@dimen/tenDip"
+                android:src="@drawable/sis_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/tenDip"
+                android:layout_marginTop="@dimen/tenDip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/notification_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Leave Request Accepted"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <TextView
+                    android:id="@+id/notification_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/tenDip"
+                    android:layout_marginRight="@dimen/tenDip"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Leave Request Accepted"
+                    android:textColor="@color/text_color_heading"
+                    android:textSize="@dimen/tweelve_sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/detailTV"
+                        style="@style/customEditTextSearch_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_purple_border_bg"
+                        android:text="@string/details"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tenDip"
+                    android:layout_marginBottom="@dimen/tenDip"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/five_dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/soundImg"
+                            android:layout_width="@dimen/sixty_dp"
+                            android:layout_height="@dimen/thirtyDp"
+                            android:background="@drawable/button_purple_border_bg"
+                            android:src="@drawable/sis_logo" />
+
+                        <ImageView
+                            android:layout_width="@dimen/sixty_dp"
+                            android:layout_height="@dimen/thirtyDp"
+                            android:layout_marginLeft="@dimen/tenDip"
+                            android:background="@drawable/button_purple_border_bg"
+                            android:src="@drawable/sis_logo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/timePeriodTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginRight="@dimen/tenDip"
+                            android:gravity="right"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/tweelve_sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

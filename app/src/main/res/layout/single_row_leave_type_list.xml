@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/leave_type_RB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/regularText"
+        android:textSize="@dimen/fortten_sp"
+        android:button="@drawable/radio_button_action"
+        android:padding="@dimen/tenDip" />
+</LinearLayout>

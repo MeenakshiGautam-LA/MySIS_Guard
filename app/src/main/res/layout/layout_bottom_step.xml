@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/gradient_red"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/twentyDP"
+          android:src="@drawable/icon_left_arrow_circle"/>
+
+
+      <TextView
+          android:id="@+id/skip_tv"
+          style="@style/mediumText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:text="@string/txt_skip"
+          android:textAllCaps="true"
+          android:textColor="@color/white"
+          android:textSize="@dimen/twentyDP" />
+
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/twentyDP"
+          android:src="@drawable/icon_right_arrow_circle" />
+-->
+    <TextView
+        android:id="@+id/step"
+        style="@style/regularText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/twentyDip"
+        android:text="@string/step"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tweelve_sp"/>
+
+
+          <TextView
+              android:id="@+id/step_no_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:layout_centerVertical="true"
+              android:textAllCaps="true"
+              android:layout_toRightOf="@id/step"
+              android:textColor="@color/white"
+              android:layout_marginLeft="@dimen/four_dp"
+              android:textSize="@dimen/tweelve_sp" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutBottomDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/five_dp"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/twentyDP"
+        android:src="@drawable/icon_right_arrow_circle"/>
+
+</RelativeLayout>

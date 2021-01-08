@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/rv_received_mssg_adapter_item_bg"
+        android:padding="10dp"
+        android:text="Provide Correct Details"
+        android:textColor="#695C70"
+        android:layout_margin="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/rv_send_mssg_adapter_item_bg"
+        android:padding="10dp"
+        android:text="Details are not correct"
+        android:textColor="#695C70" />
+
+
+</RelativeLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:background="@drawable/gradient_leave"
+    tools:context=".fragment.EmployeeTakeLeaveScreen">
+
+    <LinearLayout
+        android:id="@+id/backPressLY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backPressIV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_10dp"
+            android:src="@drawable/icon_back_arrow"
+            android:tint="@color/black"
+
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="@string/leave_request"
+            style="@style/regularText"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <TextView
+            android:id="@+id/viewLegendTV"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="@string/viewLegend"
+            style="@style/regularText"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteen_sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/childLY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backPressLY"
+            android:layout_marginTop="@dimen/tenDip"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/single_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tenDip"
+                android:button="@drawable/radio_button_action"
+                android:checked="true"
+                android:paddingLeft="@dimen/tenDip"
+                android:text="@string/one_day"
+                style="@style/mediumText"
+                android:textColor="@color/light_grey_txt_color"
+                android:textSize="@dimen/fourteen_sp" />
+
+            <RadioButton
+                android:id="@+id/multiple_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twentyFiveDip"
+                android:layout_marginTop="@dimen/tenDip"
+                android:button="@drawable/radio_button_action"
+                android:paddingLeft="@dimen/tenDip"
+                android:text="@string/multiple_days"
+                style="@style/regularText"
+                android:textColor="@color/light_grey_txt_color"
+                android:textSize="@dimen/fourteen_sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/selectable_date_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/single_day_CardView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_marginLeft="@dimen/ten_dp"
+                android:layout_marginRight="@dimen/ten_dp"
+                app:cardCornerRadius="@dimen/five_dp"
+                app:cardElevation="@dimen/tenDip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/selected_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        style="@style/regularText"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twenty_eight_sp" />
+
+                    <TextView
+                        android:id="@+id/selected_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/five_dp"
+                        android:gravity="center"
+                        style="@style/regularText"
+                        android:textColor="@color/light_grey_txt_color"
+                        android:textSize="@dimen/twenty_sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/mutiple_day_from_to_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/sixteen_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginRight="@dimen/sixteen_dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/fifteen_dp"
+                android:visibility="gone" >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mutiple_day_from_CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/five_dp"
+                    app:cardElevation="@dimen/tenDip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/from_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="From"
+                            style="@style/regularText"
+                            android:textColor="@color/light_grey_txt_color"
+                            android:textSize="@dimen/fourteen_sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="@dimen/tenDip"
+                    android:layout_height="@dimen/oneDp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/five_dp"
+                    android:layout_marginRight="@dimen/five_dp"
+                    android:background="@color/light_grey_txt_color" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mutiple_day_to_CardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fifty_dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/five_dp"
+                    app:cardElevation="@dimen/tenDip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/to_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="To"
+                            style="@style/regularText"
+                            android:textColor="@color/light_grey_txt_color"
+                            android:textSize="@dimen/fortten_sp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/include_custom_calendar"
+            layout="@layout/custom_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectable_date_linear_layout"
+            android:layout_marginTop="@dimen/thirtyDP" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/raise_request_btn"
+        android:layout_width="172dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/include_custom_calendar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twenty_fourDp"
+        android:layout_marginBottom="@dimen/fifteen_dp"
+        android:background="@drawable/next_button_gray_background"
+        android:paddingLeft="@dimen/tenDip"
+        android:paddingRight="@dimen/tenDip"
+        android:text="@string/raise_a_request"
+        android:enabled="false"
+        style="@style/mediumText"
+        android:textColor="#33333366"
+        android:textSize="@dimen/fourteen_sp" />
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="#E2DDE6" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/icon_back_arrow" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image1"
+            android:padding="5dp"
+            android:text="Contact Us"
+            android:textColor="#695C70" />
+
+
+        <!-- <ImageView
+          android:id="@+id/image1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/icon_back_arrow"
+          android:padding="5dp"/>
+
+      <TextView
+          android:id="@+id/text1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/image1"
+          android:text="Grievance"
+         android:textColor="#695C70"
+          android:padding="5dp"
+          />
+
+      <TextView
+          android:id="@+id/view_all_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#4C2170"
+          android:text="View All"
+          android:layout_alignParentRight="true"
+          android:padding="5dp"
+          />
+    -->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view_all_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#281F2D"
+        android:text="Talk to Help Centre"
+       android:padding="20dp"
+android:textSize="18dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/rectangular_relative_bg"
+        android:paddingBottom="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/issue_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help Centre"
+            android:textColor="#A799B7"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1800-2560-2564"
+            android:textColor="#281F2D"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:layout_below="@id/issue_txt"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:textColor="#4C2170"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:layout_below="@id/issue_txt"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#281F2D"
+        android:text="Talk to Your Seniors"
+        android:padding="20dp"
+        android:textSize="18dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+</LinearLayout>

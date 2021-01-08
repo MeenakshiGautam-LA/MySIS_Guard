@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="234dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/ten_dp"
+            android:src="@drawable/sislogo" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/boldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/twentyDP"
+        android:layout_marginTop="@dimen/twentyDP"
+        android:text="@string/salary_credited_to_account"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eighteen_sp" />
+
+    <TextView
+        style="@style/regularText"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentyDP"
+        android:layout_marginTop="@dimen/eight_dp"
+        android:text="@string/salary_credited_details"
+        android:textColor="@color/black" />
+
+
+    <Button
+        style="@style/mediumText"
+        android:layout_width="76dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="@dimen/twentyDP"
+        android:background="@drawable/red_rectangle_bg"
+        android:backgroundTint="@color/red_color"
+        android:gravity="center"
+        android:text="@string/txt_view"
+        android:textAllCaps="true"
+        android:textSize="@dimen/fourteen_sp" />
+
+</LinearLayout>

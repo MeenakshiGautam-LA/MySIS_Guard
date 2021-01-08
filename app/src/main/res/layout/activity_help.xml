@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_help_screen"
+    android:orientation="vertical"
+    tools:context=".HelpActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:id="@+id/toolbar_title_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_10dp"
+                android:src="@drawable/icon_back_arrow" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/help"
+                android:textColor="@color/text_color_hint"
+                android:textSize="@dimen/eighteen_sp" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirtyDp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/faq_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/eight_dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/five_dp"
+            app:cardElevation="@dimen/tenDip">
+
+            <LinearLayout
+                android:id="@+id/faqHelpLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/fourty_dp"
+                android:paddingBottom="@dimen/thirtyDp">
+
+                <ImageView
+                    android:layout_width="@dimen/fifty_six_dp"
+                    android:layout_height="@dimen/fifty_six_dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/faq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/thirtyDp"
+                    android:text="@string/faq"
+                    android:textColor="@color/text_color_sign_using_regis"
+                    android:textSize="@dimen/fourteen_sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tour_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eight_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/five_dp"
+            app:cardElevation="@dimen/tenDip">
+
+            <LinearLayout
+                android:id="@+id/tourHelpLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/fourty_dp"
+                android:paddingBottom="@dimen/thirtyDp">
+
+                <ImageView
+                    android:layout_width="@dimen/fifty_six_dp"
+                    android:layout_height="@dimen/fifty_six_dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tour" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/thirtyDp"
+                    android:text="@string/tour"
+                    android:textColor="@color/text_color_sign_using_regis"
+                    android:textSize="@dimen/fourteen_sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tenDip"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/grievance_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/eight_dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/five_dp"
+            app:cardElevation="@dimen/tenDip">
+
+            <LinearLayout
+                android:id="@+id/grievanceHelpLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/fourty_dp"
+                android:paddingBottom="@dimen/thirtyDp">
+
+                <ImageView
+                    android:layout_width="@dimen/fifty_six_dp"
+                    android:layout_height="@dimen/fifty_six_dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/grievance" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/thirtyDp"
+                    android:text="@string/grievance"
+                    android:textColor="@color/text_color_sign_using_regis"
+                    android:textSize="@dimen/fourteen_sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/contact_us_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eight_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/five_dp"
+            app:cardElevation="@dimen/tenDip">
+
+            <LinearLayout
+                android:id="@+id/contactHelpLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/fourty_dp"
+                android:paddingBottom="@dimen/thirtyDp">
+
+                <ImageView
+                    android:layout_width="@dimen/fifty_six_dp"
+                    android:layout_height="@dimen/fifty_six_dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/contact_help" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/thirtyDp"
+                    android:text="@string/contact_us"
+                    android:textColor="@color/text_color_sign_using_regis"
+                    android:textSize="@dimen/fourteen_sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:padding="@dimen/twentyDip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sis_group_logo" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relative1"
+            android:background="@drawable/gradient_welcome"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/welcome_rounded" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/regularText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:text=" Your important documents go"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/twenty_two_sp" />
+
+
+                    <TextView
+                        style="@style/regularText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:text="digital, freedom from loss &amp;"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/twenty_two_sp" />
+
+
+                    <TextView
+                        style="@style/regularText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/icon_folder"
+                        android:drawablePadding="4dp"
+                        android:gravity="center"
+                        android:text=" damage!"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/twenty_two_sp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        style="@style/regularText"
+                        android:gravity="center"
+                        android:text="@string/boarding_4_inner"
+                        android:textColor="@color/op_white_color"
+                        android:textSize="@dimen/txt_size_14sp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/welcome_big_rounded"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/boarding_my_sis_icon" />
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/khand_semi_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="आपके महत्वपूर्ण काग़ज़ात बने डिजिटल, "
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty_fourDp" />
+
+
+            <TextView
+                style="@style/khand_semi_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableEnd="@drawable/icon_folder"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:text="खोने की चिंता से मुक्ति !"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty_fourDp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/txt_size_14sp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                style="@style/khand_mediumText"
+                android:text="MYSIS लॉकर आपके सभी महत्वपूर्ण व्यक्तिगत दस्तावेजों की डिजिटल कॉपी रखने की सुविधा प्रदान करता है |"
+                android:textColor="@color/op_white_color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/welcome_screen4_BTN"
+            android:layout_width="@dimen/fifty_five_dp"
+            android:layout_height="@dimen/fifty_five_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/twentyDP"
+            android:background="@drawable/icon_forward"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

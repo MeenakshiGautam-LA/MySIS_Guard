@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2DDE6"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/icon_back_arrow" />
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image1"
+            android:padding="10dp"
+            android:text="Salary Slip"
+            android:textSize="18dp"
+            android:textColor="#695C70" />
+
+
+        <!-- <ImageView
+          android:id="@+id/image1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/icon_back_arrow"
+          android:padding="5dp"/>
+
+      <TextView
+          android:id="@+id/text1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/image1"
+          android:text="Grievance"
+         android:textColor="#695C70"
+          android:padding="5dp"
+          />
+
+      <TextView
+          android:id="@+id/view_all_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#4C2170"
+          android:text="View All"
+          android:layout_alignParentRight="true"
+          android:padding="5dp"
+          />
+    -->
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="#FFFFFF"
+    android:layout_margin="20dp"
+    >
+
+
+</RelativeLayout>
+
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Download"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:textColor="#FFFFFF"
+    android:background="@drawable/rectangular_btn"/>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

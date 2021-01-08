@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/cancel_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/thirty_five_dp"
+        android:tint="@color/black"
+        app:srcCompat="@drawable/icon_cross" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/lightText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_guard_profile"
+                android:gravity="center"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/three_hundred_dp"
+                android:layout_height="@dimen/three_hundred_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:layout_gravity="center"
+                android:id="@+id/userIV"
+                android:src="@drawable/profile" />
+
+            <TextView
+                style="@style/mediumText"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twentyDip"
+                android:id="@+id/userNameTV"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twenty_four_sp" />
+
+            <TextView
+                style="@style/regularText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/duty_symbol_TV"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <TextView
+                style="@style/regularText"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:id="@+id/postNameTV"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteen_sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/twentyDip"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancelBTN"
+                    style="@style/mediumText"
+                    android:layout_width="@dimen/two_hundred_dp"
+                    android:layout_height="@dimen/thirty_five_dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_purple_border_bg"
+                    android:paddingLeft="@dimen/fourtyDp"
+                    android:paddingRight="@dimen/fourtyDp"
+                    android:text="@string/Cancel"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_default_red_color"
+                    android:textSize="@dimen/tweelve_sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/confirmBTN"
+                    style="@style/mediumText"
+                    android:layout_width="@dimen/two_hundred_dp"
+                    android:layout_height="@dimen/thirty_five_dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_border_red_app_bg"
+                    android:paddingLeft="@dimen/fourtyDp"
+                    android:paddingRight="@dimen/fourtyDp"
+                    android:text="@string/confirm"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:layout_marginRight="@dimen/ten_dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tweelve_sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

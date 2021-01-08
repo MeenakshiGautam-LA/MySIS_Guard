@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/signActivity">
+
+    <fragment
+        android:id="@+id/signActivity"
+        android:name="com.sisindia.mysis.fragment.SignIn"
+        tools:layout="@layout/sign_in_layout"
+        android:label="SignActivity" >
+        <action
+            android:id="@+id/action_signActivity_to_OTPActivity"
+            app:destination="@id/OTPActivity" />
+     </fragment>
+    <fragment
+        android:id="@+id/OTPActivity"
+        android:name="com.sisindia.mysis.fragment.OTPFragment"
+        tools:layout="@layout/otp_screen"
+        android:label="OTPActivity" >
+        <action
+            android:id="@+id/action_OTPActivity_to_setPin"
+            app:destination="@id/setPin"
+            app:popUpToInclusive="false"
+            app:popUpTo="@id/signActivity"/>
+    </fragment>
+    <fragment
+        android:id="@+id/setPin"
+        android:name="com.sisindia.mysis.fragment.SetPin"
+        android:label="set_pin"
+        tools:layout="@layout/set_pin">
+<!--        <action-->
+<!--            android:id="@+id/action_setPin_to_signActivity"-->
+<!--            app:destination="@id/signActivity"-->
+<!--            app:popUpToInclusive="false"-->
+<!--            app:popUpTo="@id/signActivity"-->
+<!--            />-->
+    </fragment>
+   </navigation>

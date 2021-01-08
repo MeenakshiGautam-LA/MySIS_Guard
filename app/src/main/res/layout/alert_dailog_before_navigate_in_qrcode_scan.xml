@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/tenDip">
+
+    <TextView
+        android:id="@+id/employeeNameTV"
+        style="@style/customEditTextSearch_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/tenDip"
+        android:singleLine="false"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/tenDip">
+
+        <TextView
+            style="@style/customEditTextSearch_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_number"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/customEditTextSearch_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tenDip"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/regNoTV"
+            style="@style/customEditTextSearch_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/customEditTextSearch_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/tenDip"
+        android:text="@string/continue_tolocation_qr_scan"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tenDip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/confirmBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fourty_dp"
+            android:background="@color/gray"
+            android:text="@string/Yes" />
+
+        <Button
+            android:id="@+id/cancelBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/fourty_dp"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:background="@color/gray"
+            android:text="@string/No" />
+    </LinearLayout>
+</LinearLayout>

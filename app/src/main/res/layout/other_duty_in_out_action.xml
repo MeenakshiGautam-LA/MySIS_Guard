@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/backPressIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tenDip"
+        android:padding="@dimen/fifteen_dp"
+        android:rotation="180"
+        android:src="@drawable/white_arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/hundred_dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/security_guard_one_icon"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/fifty_dp"
+
+                android:src="@drawable/icon_security_guard_one" />
+
+            <ImageView
+                android:id="@+id/security_guard_two_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/other_duty_guard" />
+
+            <ImageView
+                android:id="@+id/security_guard_three_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/fifty_dp"
+
+                android:src="@drawable/other_duty_guard_second" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/other_duty_txt"
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twentyDip"
+            android:gravity="center_horizontal"
+            android:text="Other Duty"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twentyDip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirtyDP"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/otherDuty_IN_BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fourtyDp"
+                android:layout_below="@id/lateAttendance_TV"
+                android:background="@drawable/background_border_red_app_bg"
+                android:paddingLeft="@dimen/fourtyDp"
+                android:paddingRight="@dimen/fourtyDp"
+                android:text="@string/duty_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tweelve_sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/otherDuty_Out_BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fourtyDp"
+                android:layout_below="@id/lateAttendance_TV"
+                android:layout_marginLeft="@dimen/tenDip"
+                android:background="@drawable/background_border_red_app_bg"
+                android:paddingLeft="@dimen/fourtyDp"
+                android:paddingRight="@dimen/fourtyDp"
+                android:text="@string/duty_out"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tweelve_sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

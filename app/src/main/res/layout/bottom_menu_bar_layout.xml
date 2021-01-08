@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background_gradient"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fifteen_dp"
+            android:weightSum="3">
+
+
+            <LinearLayout
+                android:id="@+id/dutyMenuLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/home_un_selected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/home"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/calenderMenuLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/duty_selected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/duty_txt"
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/profileMenuLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/txt_profile"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fifteen_dp"
+            android:weightSum="3">
+
+
+            <!-- <LinearLayout
+                   android:id="@+id/salaryMenuLinear"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:visibility="gone"
+                   android:orientation="vertical">
+
+                   <androidx.appcompat.widget.AppCompatImageView
+                       android:layout_width="@dimen/twenty_fourDp"
+                       android:layout_height="@dimen/twenty_fourDp"
+                       android:src="@drawable/icon_salary" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/five_dp"
+                       android:text="Salary"
+                       android:textAllCaps="true"
+                       android:textColor="@color/app_default_color"
+                       android:textSize="@dimen/ten_sp"
+                       android:textStyle="bold" />
+               </LinearLayout>-->
+
+
+            <LinearLayout
+                android:id="@+id/salMenuLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/icon_black_salary" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/txt_salry"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notificationLY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/notification_black_icon"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/txt_notification"
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/leaveMenuLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/icon_black_leave" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/txt_leaves"
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/syncMenuLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/refresh_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/txt_sync"
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fifteen_dp"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <!--     android:id="@+id/syncMenuLinear"-->
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/refresh_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/txt_sync"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/checkUpdateLY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/twentyFiveDip"
+
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/twenty_fourDp"
+                        android:layout_height="@dimen/twenty_fourDp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_sync" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:text="@string/check_Update"
+                        android:textAllCaps="true"
+                        android:textColor="@color/app_default_color"
+                        android:textSize="@dimen/ten_sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sulabhLoanLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/twenty_fourDp"
+                        android:layout_height="@dimen/twenty_fourDp"
+                        android:src="@drawable/sulabh_loan_icon" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginTop="2dp"
+
+                        android:src="@drawable/icon_rupee_symbol"
+
+                        />
+
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/sulabh_loan"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/akrLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/akr_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/akr"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/akrMenuLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+                    android:src="@drawable/dress_due" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="AKR"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_default_color"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fifteen_dp"
+            android:visibility="gone"
+            android:weightSum="3">
+
+
+            <LinearLayout
+                android:id="@+id/helpMenuLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/twenty_fourDp"
+                        android:layout_height="@dimen/twenty_fourDp"
+                        android:src="@drawable/help_bg" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center"
+                        android:src="@drawable/help_icon" />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/help"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/langMenuLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/twenty_fourDp"
+                    android:layout_height="@dimen/twenty_fourDp"
+
+                    android:src="@drawable/lang_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/language"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ten_sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:text="App Version"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/fourteen_sp" />
+
+
+        <TextView
+            android:id="@+id/app_version_TV"
+            style="@style/regularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="10.0.0"
+            android:textSize="@dimen/fourteen_sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:background="#20333333" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/ten_dp"
+            android:paddingBottom="@dimen/ten_dp">
+
+
+            <TextView
+                style="@style/regularText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark Mode"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/fourteen_sp" />
+
+
+            <ToggleButton
+                android:id="@+id/mode_dark_on_of_TB"
+                style="@style/regularText"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:drawableLeft="@drawable/toggle_icon"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/fourteen_sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

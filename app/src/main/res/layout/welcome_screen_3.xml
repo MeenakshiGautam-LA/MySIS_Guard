@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="48dp"
+                android:background="@drawable/welcome_rounded" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/boldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/icon_white_check"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="@string/boardingleave"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="@string/boarding_leave_inner"
+                    android:textColor="@color/white"
+                    style="@style/regularText"
+                    android:textSize="@dimen/sixteen_sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/boarding_calender_icon" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/khand_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/icon_white_check"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="छुट्टी आवेदन और अनुमति बना सुलभ !"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/twenty_four_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            style="@style/khand_mediumText"
+            android:textSize="@dimen/sixteen_sp"
+            android:text="आप अपनी छुट्टी प्लान ऑनलाइन आवेदन कर सकते हैं| अब branch जाने की या Operation team के पास आवेदन पत्र ले जाने की जरूरत नहीं।"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/welcome_screen3_BTN"
+            android:layout_width="@dimen/fifty_five_dp"
+            android:layout_height="@dimen/fifty_five_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/twentyDP"
+            android:background="@drawable/icon_forward"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

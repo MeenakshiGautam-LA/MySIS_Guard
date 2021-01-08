@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChangeContactNumberActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:id="@+id/toolbar_title_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backPressIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_10dp"
+                android:src="@drawable/icon_back_arrow" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/change_contact_number"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/eighteen_sp" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tenDip"
+        android:layout_marginTop="@dimen/hundred_dp"
+        android:layout_marginRight="@dimen/tenDip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/oneDp"
+        app:cardElevation="@dimen/tenDip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sisLogoLinear"
+            android:layout_marginTop="@dimen/fifty_dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/fifty_dp">
+
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="@dimen/tenDip"
+                 android:gravity="center"
+                 android:text="@string/sign_in"
+                 android:textColor="@color/black"
+                 android:textSize="@dimen/eighteen_sp" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_new_mobile_number"
+                android:theme="@style/TextLabel">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/mobileET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty_dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/fourty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/tenDip"
+                    android:textSize="@dimen/eighteen_sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/raise_request_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/fifty_dp"
+        android:background="@drawable/next_button_gray_background"
+        android:gravity="center"
+        android:padding="@dimen/twentyDip"
+        android:text="@string/raise_a_request"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_14sp" />
+</LinearLayout>

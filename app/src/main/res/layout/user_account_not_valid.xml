@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background_gradient"
+    android:orientation="vertical">
+
+    <include layout="@layout/mark_attendance_header" />
+
+    <LinearLayout
+        android:id="@+id/logoLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tenDip"
+        android:layout_marginTop="@dimen/twentyDip"
+        android:layout_marginRight="@dimen/tenDip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/app_icon" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/twentyDip"
+            app:cardCornerRadius="@dimen/tenDip"
+            app:cardElevation="@dimen/tenDip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sisLogoLinear"
+                android:orientation="vertical"
+                android:padding="@dimen/fourty_dp">
+
+                <TextView
+                    style="@style/regularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Inactive account"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty_sp" />
+
+                <TextView
+                    android:id="@+id/user_account_invalid_TV"
+                    style="@style/regularText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/twentyDip"
+                    android:text="Your account with registration no. EMP0001111 is inactive. Please contact nearest branch."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twelve_sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/back_TV"
+            style="@style/boldText"
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_marginBottom="@dimen/fourty_dp"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textAllCaps="true"
+            android:textColor="@color/app_default_red_color"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <TextView
+            android:id="@+id/forgetPinTV"
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:text="@string/forget_current_pin"
+            android:textColor="@color/app_default_red_color"
+            android:textSize="@dimen/sixteen_sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

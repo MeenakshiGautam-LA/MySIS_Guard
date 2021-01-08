@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+
+        <ImageView
+            android:id="@+id/icon_security_guard_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_security_guard_one"
+
+            />
+
+        <TextView
+            android:id="@+id/security_guard_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/icon_security_guard_one"
+            android:text="Ramesh Singh"
+            android:textColor="#281F2D"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_guard_name_txt"
+            android:layout_toRightOf="@id/icon_security_guard_one"
+            android:text="Guard SO" />
+
+
+        <ImageView
+            android:id="@+id/icon_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_cross" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/icon_security_guard_one"
+            android:layout_marginLeft="20dp"
+            android:background="#A799B7" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+
+        <ImageView
+            android:id="@+id/google_map_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/google_map_location"/>
+
+
+        <TextView
+            android:id="@+id/security_guard_location_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/google_map_location"
+            android:text="Axis Bank DLE UNT 12345"
+            android:textColor="#281F2D"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/security_guard_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_guard_location_txt"
+            android:layout_toRightOf="@id/google_map_location"
+            android:text="Post"
+            android:textColor="#A799B7"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/security_guard_post_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_guard_location_txt"
+            android:layout_toRightOf="@id/security_guard_post"
+            android:text=" Main Gate"
+            android:textColor="#281F2D"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/security_guard_postrank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_guard_location_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/security_guard_post_txt"
+            android:text="Post Rank"
+            android:textColor="#A799B7"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/security_guard_postrank_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/security_guard_location_txt"
+            android:layout_toRightOf="@id/security_guard_postrank"
+            android:text=" SO"
+            android:textColor="#281F2D"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="#FCFAC3"
+            android:padding="10dp"
+            android:text="Shift A"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        />
+
+
+<SurfaceView
+    android:id="@+id/surface_view"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical">
+
+        <Button
+            android:id="@+id/retake_btn"
+            android:layout_width="124dp"
+            android:layout_height="40dp"
+            android:background="@drawable/retake_btn_bg"
+            android:text="Retake"
+            android:textColor="#4C2170"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="124dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_border_app_bg"
+            android:text="Submit"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    >
+
+
+
+
+    <LinearLayout
+        android:id="@+id/footerBottomSheet_LY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/guard_bottom_red_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_15dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/dutyLY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/duty_IN_IV"
+                android:layout_width="@dimen/twenty_fourDp"
+                android:layout_height="@dimen/twenty_fourDp"
+
+                android:src="@drawable/duty_white_icon" />
+
+
+            <TextView
+                android:id="@+id/activity_my_task_installation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/duty_txt"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_10sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/calenderLY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/calender_IV"
+                android:layout_width="@dimen/twenty_fourDp"
+                android:layout_height="@dimen/twenty_fourDp"
+                android:src="@drawable/duty_un_selected" />
+
+            <TextView
+                android:id="@+id/activity_my_task_conveyance_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/calendar_txt"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_10sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/menuLY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_mark_attendance_duty_in_menu_img"
+                android:layout_width="@dimen/twenty_fourDp"
+                android:layout_height="@dimen/twenty_fourDp"
+                android:src="@drawable/menu_white_icon" />
+
+            <TextView
+                android:id="@+id/activity_mark_attendance_duty_in_menu_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/menu_txt"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_10sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

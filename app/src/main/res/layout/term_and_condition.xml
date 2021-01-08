@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background_gradient"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/hundred_fifty_dp"
+            android:layout_height="@dimen/seventy_dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sis_group_logo" />
+
+        <TextView
+            style="@style/boldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/term_and_conditions"
+            android:textColor="@color/app_default_red_color"
+            android:textSize="@dimen/twenty_four_sp" />
+
+        <TextView
+            style="@style/regularText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/ten_dp"
+            android:text="@string/term_cond_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelve_sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fifteen_dp"
+            app:cardBackgroundColor="@color/white_background"
+            app:cardCornerRadius="@dimen/ten_dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/ten_dp">
+
+                <TextView
+                    style="@style/boldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_dp" />
+
+                <TextView
+                    style="@style/regularText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/device_location_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tweelve_sp" />
+
+                <TextView
+                    style="@style/boldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text="@string/sms"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_dp" />
+
+                <TextView
+                    style="@style/regularText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/sms_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tweelve_sp" />
+
+                <TextView
+                    style="@style/boldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text="@string/camera"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_dp" />
+
+                <TextView
+                    style="@style/regularText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/camera_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tweelve_sp" />
+
+                <TextView
+                    style="@style/boldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten_dp"
+                    android:text="@string/contacts"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/fifteen_dp" />
+
+                <TextView
+                    style="@style/regularText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:text="@string/contact_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tweelve_sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/agreeBTN"
+        style="@style/mediumText"
+        android:layout_width="@dimen/hundred_thirty_five_dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/background_border_red_app_bg"
+        android:text="@string/i_agree"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/fifteen_dp"
+        android:textSize="@dimen/txt_size_14sp" />
+</LinearLayout>

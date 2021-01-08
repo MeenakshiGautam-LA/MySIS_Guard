@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2DDE6">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/icon_back_arrow" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image1"
+            android:padding="5dp"
+            android:text="Grievance"
+            android:textColor="#695C70" />
+
+        <TextView
+            android:id="@+id/view_all_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="View All"
+            android:textColor="#4C2170" />
+        <!-- <ImageView
+          android:id="@+id/image1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/icon_back_arrow"
+          android:padding="5dp"/>
+
+      <TextView
+          android:id="@+id/text1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/image1"
+          android:text="Grievance"
+         android:textColor="#695C70"
+          android:padding="5dp"
+          />
+
+      <TextView
+          android:id="@+id/view_all_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#4C2170"
+          android:text="View All"
+          android:layout_alignParentRight="true"
+          android:padding="5dp"
+          />
+    -->
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"></androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/btn_raise_grievance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rectangular_btn"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Raise Grievance"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

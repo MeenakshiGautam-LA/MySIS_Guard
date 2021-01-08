@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/scanByQr_CodeLY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/tenDip">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/fourtyDp"
+            android:layout_height="@dimen/fourtyDp"
+            android:src="@drawable/group_icon_in_other_duty"
+            android:tint="@color/app_default_red_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_weight="1"
+            android:text="@string/scan_QRCode_BY_IDCard"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteen_sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cancel_actionIV"
+            android:layout_width="@dimen/twentyFiveDip"
+            android:layout_height="@dimen/twentyFiveDip"
+            android:tint="@color/app_default_red_color"
+            app:srcCompat="@drawable/icon_cross" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manuallyHeaderLY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tenDip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backPressIV"
+            android:layout_width="@dimen/twentyFiveDip"
+            android:layout_height="@dimen/twentyFiveDip"
+            android:layout_gravity="center"
+            android:rotation="180"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/white_arrow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twentyDip"
+            android:text="@string/other_duty_enter_other_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteen_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/searchbyQR_Scan_RL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:visibility="visible">
+
+
+            <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.king.zxing.ViewfinderView
+                android:id="@+id/viewfinderView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:cornerColor="@color/white"
+                app:frameColor="@color/light_gray"
+                app:labelTextLocation="bottom"
+                app:laserColor="@color/app_default_red_color"
+                app:resultPointColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/searchBy_manuallyLY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/fifty_dp"
+            android:orientation="vertical"
+            android:padding="@dimen/twentyFiveDip"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/text_color_hint"
+                android:hint="@string/enter_Contact_no"
+                android:theme="@style/TextLabel">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/mobileET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/fourty_dp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/tenDip"
+                    android:textSize="@dimen/forteenDP" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/searchEmp_BTN"
+                android:layout_width="@dimen/hundred_fifty_dp"
+                android:layout_height="@dimen/fourty_dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/twentyFiveDip"
+                android:background="@drawable/next_button_gray_background"
+                android:text="@string/next"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/txt_size_14sp" />
+
+            <LinearLayout
+                android:id="@+id/disable_by_reg_or_MobileLY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/regNoAction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/twentyFiveDip"
+                    android:gravity="center"
+                    android:text="@string/reg_no"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_default_red_color"
+                    android:textSize="@dimen/txt_size_14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/mobileNoAction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tenDip"
+                    android:layout_marginTop="@dimen/twentyFiveDip"
+                    android:gravity="center"
+                    android:text="@string/by_mobile_no"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_default_red_color"
+                    android:textSize="@dimen/txt_size_14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:gravity="center"
+                    android:text="@string/OR"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_grey_txt_color"
+                    android:textSize="@dimen/eighteen_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/selfTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/tenDip"
+                    android:text="@string/self"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_default_red_color"
+                    android:textSize="@dimen/txt_size_14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/enterManually_Des_LY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/twentyDip">
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tenDip"
+            android:text="@string/not_able_scan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_14sp" />
+
+        <TextView
+            style="@style/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tenDip"
+            android:text="@string/enter_Manually"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scanQRCode_Des_LY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/twentyDip"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tenDip"
+            android:text="@string/scan_by_qrcode"
+            android:textAllCaps="true"
+            android:textColor="@color/app_default_red_color"
+            android:textSize="@dimen/txt_size_14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

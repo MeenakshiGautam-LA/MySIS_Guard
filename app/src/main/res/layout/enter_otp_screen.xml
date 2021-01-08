@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/logoLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tenDip"
+        android:layout_marginTop="@dimen/thirtyDp"
+        android:layout_marginRight="@dimen/tenDip"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/app_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_hundred_dp"
+        android:layout_below="@+id/sisLogoLinear"
+        android:layout_marginLeft="@dimen/thirtyDp"
+        android:layout_marginTop="@dimen/fifty_dp"
+        android:layout_marginRight="@dimen/thirtyDp"
+        android:background="@drawable/popup_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/thirtyDp"
+        android:paddingRight="@dimen/thirtyDp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/tenDip"
+            android:text="@string/enter_otp"
+            android:textColor="@color/text_color_heading"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/tenDip"
+            android:text="@string/enter_otp_msg"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/fourteen_sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twentyDip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.sisindia.mysis.utils.PinEntryEditText
+                android:id="@+id/txt_pin_entry1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:cursorVisible="true"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:textSize="24dp"
+                app:pinAnimationType="fromBottom"
+                app:pinBackgroundDrawable="@drawable/otp_border_bg"
+                app:pinBackgroundIsSquare="true"
+                app:pinCharacterSpacing="10dp"
+                app:pinLineColors="@color/light_black"
+                app:pinTextBottomPadding="16dp"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="02:30"
+        android:layout_marginTop="@dimen/fifty_dp"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/twenty_four_sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/resend_otp"
+        android:layout_marginTop="@dimen/fifty_dp"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/twenty_four_sp" />
+
+
+     <androidx.appcompat.widget.AppCompatButton
+         android:id="@+id/add_employeeBTN"
+         android:layout_width="@dimen/hundred_fifty_dp"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginTop="@dimen/fourty_dp"
+         android:gravity="center"
+         android:layout_marginBottom="@dimen/fourty_dp"
+         android:background="@drawable/next_button_purple_background"
+         android:text="@string/sign_in"
+         android:textColor="@color/white"
+         android:textSize="@dimen/eighteen_sp" />
+
+
+</LinearLayout>

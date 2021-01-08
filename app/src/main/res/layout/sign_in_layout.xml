@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!--android:background="@color/light_gray"-->
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fourteen_sp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/eighteen_sp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sis_group_logo" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/sislogo" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/logoLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:layout_marginLeft="@dimen/tenDip"
+        android:layout_marginTop="@dimen/thirtyDp"
+        android:layout_marginRight="@dimen/tenDip"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/headerIV"
+            android:layout_width="@dimen/hundred_six_dp"
+            android:layout_height="@dimen/hundred_six_dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/app_icon" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hundred_seventy_six_dp"
+        android:layout_below="@+id/logoLinear"
+        android:layout_marginLeft="@dimen/tenDip"
+        android:layout_marginTop="@dimen/thirtyDp"
+        android:layout_marginRight="@dimen/tenDip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/oneDp"
+        app:cardElevation="@dimen/tenDip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sisLogoLinear"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sign_in_using_header_TV"
+                style="@style/regularText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/tenDip"
+                android:gravity="center"
+                android:text="@string/sign_in_using_mobile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twenty_sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_mobile_no"
+                app:boxBackgroundMode="filled">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/mobileET"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fourty_dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/fifteen_dp"
+                    android:layout_marginTop="@dimen/thirtyDp"
+                    android:layout_marginRight="@dimen/fifteen_dp"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/tenDip"
+                    android:paddingBottom="@dimen/two_dp"
+                    android:textSize="@dimen/fortten_sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- <TextView
+         android:id="@+id/signByRegistrationTV"
+         style="@style/boldText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/cardview"
+         android:layout_centerHorizontal="true"
+         android:layout_gravity="center"
+         android:layout_marginTop="@dimen/thirtyDp"
+         android:gravity="center"
+         android:text="@string/sign_using_registration"
+         android:textColor="@color/app_default_red_color"
+         android:textSize="@dimen/sixteen_sp"
+         android:textStyle="bold" />-->
+
+
+    <!-- <TextView
+         android:id="@+id/signByRegistrationTV"
+         style="@style/boldText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         android:layout_centerHorizontal="true"
+         android:layout_gravity="center"
+         android:layout_marginTop="@dimen/thirtyDp"
+         android:gravity="center"
+         android:text="@string/sign_using_registration"
+         android:textColor="@color/app_default_red_color"
+         android:textSize="@dimen/sixteen_sp"
+         android:textStyle="bold" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signInBTN"
+        style="@style/mediumText"
+        android:layout_width="@dimen/hundred_thirty_five_dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/fourty_dp"
+        android:background="@drawable/next_button_gray_background"
+        android:text="@string/next"
+        android:textAllCaps="true"
+        android:textColor="@color/upper_light_black"
+        android:textSize="@dimen/txt_size_14sp" />
+
+    <LinearLayout
+        android:id="@+id/by_reg_no_des_LY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/signInBTN"
+        android:layout_marginBottom="@dimen/thirtyDp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/signByRegistrationTV"
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/thirtyDp"
+            android:gravity="center"
+            android:text="@string/sign_using_registration"
+            android:textAllCaps="true"
+            android:textColor="@color/app_default_red_color"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <TextView
+            android:id="@+id/sig_in_des_hindi_TV"
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fiveDp"
+            android:text="रजिस्ट्रेशन नंबर का उपयोग करके साइन इन करें"
+            android:textColor="@color/app_default_red_color"
+            android:textSize="@dimen/sixteen_dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobile_no_des_LY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/signInBTN"
+        android:layout_marginBottom="@dimen/thirtyDp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/mobileNoAction"
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/thirtyDp"
+            android:gravity="center"
+            android:text="@string/by_mobile_no"
+            android:textAllCaps="true"
+            android:textColor="@color/app_default_red_color"
+            android:textSize="@dimen/sixteen_sp" />
+
+        <TextView
+            style="@style/boldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fiveDp"
+            android:text="मोबाइल नंबर का उपयोग करके साइन इन करें"
+            android:textColor="@color/app_default_red_color"
+            android:textSize="@dimen/sixteen_dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

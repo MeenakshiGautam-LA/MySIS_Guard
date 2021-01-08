@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/synServerMainRL"
+    tools:context=".Sync_landing_img">
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:padding="@dimen/fifteen_dp"
+    app:srcCompat="@drawable/icon_cross"
+    android:layout_alignParentRight="true"
+    android:id="@+id/crossIV"
+    android:layout_marginRight="@dimen/fifteen_dp"
+    android:layout_marginTop="@dimen/fifteen_dp"
+    android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame_layout"
+        android:layout_centerVertical="true">
+        <cdflynn.android.library.checkview.CheckView
+            android:id="@+id/check"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:checkView_strokeColor="@color/green"
+            app:checkView_strokeWidth="@dimen/five_dp"/>
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:id="@+id/synServerGIF"
+            android:layout_height="match_parent"
+            android:src="@drawable/sync"
+            />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/frame_layout"
+        android:text="@string/trying_to_sync"
+        android:id="@+id/syncDesTV"
+        android:layout_marginLeft="@dimen/thirtyDP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/twentyDP"/>
+
+</RelativeLayout>

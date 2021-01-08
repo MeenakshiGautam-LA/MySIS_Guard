@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/welcome_rounded" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/whatsapp"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    style="@style/boldText"
+                    android:text="@string/boarding_6_header"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/twenty_four_sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    style="@style/regularText"
+                    android:gravity="center"
+                    android:text="@string/boarding_6_inner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_14sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_calling" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/khand_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/whatsapp"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+
+            android:text="एम्प्लॉई सहायता केंद्र से करवाइए समस्याओं का निदान - व्हाट्सएप चैट पर !"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_four_sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            style="@style/khand_mediumText"
+            android:textSize="@dimen/sixteen_sp"
+            android:text="MySIS ऐप के जरिए आप अपने ओपरेशन स्टाफ, ब्रांच हेड या ERC टीम से तत्काल संपर्क कर सकते हैं |"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_tour"
+            android:layout_width="@dimen/fifty_five_dp"
+            android:layout_height="@dimen/fifty_five_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/twentyDP"
+            android:background="@drawable/icon_forward"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

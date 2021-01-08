@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- <stroke
+        android:width="2dip"
+        android:color="@color/gray" />-->
+
+    <solid android:color="@color/app_button_border_color" />
+
+    <corners android:radius="@dimen/padding_40dp" />
+
+  <!--  <padding
+        android:bottom="10dip"
+        android:left="10dip"
+        android:right="10dip"
+        android:top="10dip" />-->
+
+
+</shape>

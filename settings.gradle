@@ -1,0 +1,4 @@
+include ':CameraXPreview'
+include ':app', ':BarCodelib'
+project(':BarCodelib').projectDir = new File('lib')
+project(':CameraXPreview').projectDir = new File(rootDir, 'lib/CameraXPreview/')

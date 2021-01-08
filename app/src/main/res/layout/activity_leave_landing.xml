@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white_background"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="0dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backPressIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10dp"
+                android:src="@drawable/icon_back_arrow"
+                android:tint="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/backPressIV"
+                android:text="@string/leave"
+                style="@style/regularText"
+                android:textColor="@color/light_grey_txt_color"
+                android:textSize="@dimen/fourteen_sp" />
+
+            <TextView
+                android:id="@+id/leave_history_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/leavehistory"
+                android:textAllCaps="true"
+                android:visibility="invisible"
+                android:layout_marginRight="@dimen/padding_15dp"
+                android:enabled="false"
+                style="@style/regularText"
+                android:layout_centerVertical="true"
+                android:textColor="@color/app_default_color"
+                android:textSize="@dimen/fourteen_sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/single_row_leaving_status"
+            android:layout_margin="@dimen/tenDip"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_five_dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal|center_vertical">
+        <Button
+            android:id="@+id/apply_leave_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:background="@drawable/background_border_red_app_bg"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Apply for Leave"
+            style="@style/mediumText"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+</LinearLayout>

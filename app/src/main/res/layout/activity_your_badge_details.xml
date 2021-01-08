@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".YourBadgeDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:id="@+id/toolbar_title_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_10dp"
+                android:src="@drawable/icon_back_arrow" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/your_badge"
+                android:textColor="@color/text_color_heading"
+                android:textSize="@dimen/fourteen_sp" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fifty_six_sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/five_dp"
+            android:text="@string/badges"
+            android:textColor="@color/text_color_hint"
+            android:textSize="@dimen/twenty_eight_sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tenDip"
+            android:layout_marginRight="@dimen/tenDip"
+            android:layout_weight="1"
+            android:id="@+id/alert_badge"
+            android:background="@color/color_bg_alert_badge"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/tenDip"
+            app:cardElevation="@dimen/twentyDip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/thirtyDp"
+                android:paddingBottom="@dimen/thirtyDp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/text_color_sign_using_regis"
+                    android:textSize="@dimen/thirty_eight_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/tenDip"
+                    android:gravity="center"
+                    android:text="@string/alert"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/tweelve_sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/fourty_five_dp"
+                    android:layout_height="@dimen/fourty_five_dp"
+                    android:layout_gravity="center|top"
+                    android:layout_marginTop="@dimen/tenDip"
+                    android:src="@drawable/alert" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tenDip"
+            android:layout_marginRight="@dimen/tenDip"
+            android:layout_weight="1"
+            android:id="@+id/unearn_badge"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/tenDip"
+            app:cardElevation="@dimen/twentyDip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/thirtyDp"
+                android:paddingBottom="@dimen/thirtyDp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@color/text_color_sign_using_regis"
+                    android:textSize="@dimen/thirty_eight_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/tenDip"
+                    android:gravity="center"
+                    android:text="@string/unearned"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="@dimen/tweelve_sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/badge_img"
+                        android:layout_width="@dimen/thirty_five_dp"
+                        android:layout_height="@dimen/thirty_five_dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginTop="@dimen/tenDip"
+                        android:src="@drawable/badge_discipline"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/badge_img1"
+                        android:layout_width="@dimen/thirty_five_dp"
+                        android:layout_height="@dimen/thirty_five_dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginLeft="@dimen/twentyDip"
+                        android:layout_marginTop="@dimen/tenDip"
+                        android:src="@drawable/badge_team_work"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/badge_img2"
+                        android:layout_width="@dimen/thirty_five_dp"
+                        android:layout_height="@dimen/thirty_five_dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginLeft="@dimen/fourty_dp"
+                        android:layout_marginTop="@dimen/tenDip"
+                        android:src="@drawable/badge_cup"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#E2DDE6">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+   android:layout_above="@id/relative"
+
+       />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="20dp">
+
+
+        <EditText
+            android:id="@+id/type_here_edittxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/type_here_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:hint="Type here..."
+            android:textColor="#A799B7" />
+
+        <ImageView
+            android:id="@+id/icon_send_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_send_message"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

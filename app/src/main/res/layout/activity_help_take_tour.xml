@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2DDE6"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/icon_back_arrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:src="@drawable/icon_back_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/icon_back_arrow"
+                        android:layout_centerVertical="true"
+                        android:text="Tour"
+                        android:textColor="#695C70"
+                        android:textSize="@dimen/txt_size_14sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon_magnifying_glass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:src="@drawable/icon_tour" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@id/icon_back_arrow"
+                android:text="Take a Tour"
+                android:textColor="#4C2170"
+                android:textSize="28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@id/icon_back_arrow"
+                android:text="Select a Tour and Travel"
+                android:textColor="#A799B7"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/how_to_make_LY"
+                    android:layout_width="151dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangular_relative_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="36dp"
+                        android:src="@drawable/icon_clock_big" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_top_10dp"
+                        android:padding="10dp"
+                        android:text="How to mark an"
+                        android:textColor="#281F2D" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="151dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangular_relative_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="36dp"
+                        android:src="@drawable/icon_apply" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_top_10dp"
+                        android:padding="10dp"
+                        android:text="How to apply"
+                        android:textColor="#281F2D" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="151dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangular_relative_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="36dp"
+                        android:src="@drawable/icon_question" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_top_10dp"
+                        android:padding="10dp"
+                        android:text="How to raise a"
+                        android:textColor="#281F2D" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="151dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangular_relative_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="36dp"
+                        android:src="@drawable/icon_calendar_big" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_top_10dp"
+                        android:padding="10dp"
+                        android:text="How to check"
+                        android:textColor="#281F2D" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="151dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangular_relative_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="36dp"
+                        android:src="@drawable/icon_lock" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_top_10dp"
+                        android:padding="10dp"
+                        android:text="How to mark an"
+                        android:textColor="#281F2D" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="151dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rectangular_relative_bg"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="36dp"
+                        android:src="@drawable/icon_lock" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/padding_top_10dp"
+                        android:padding="10dp"
+                        android:text="How to apply"
+                        android:textColor="#281F2D" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

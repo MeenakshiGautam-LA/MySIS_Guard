@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#F0EEF3">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"  >
+
+    <ImageView
+        android:id="@+id/icon_circular_guard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_circular_guard"
+        android:padding="10dp"
+        android:layout_weight="0.2"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/client_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#281F2D"
+            android:text="Ramesh singh"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#A799B7"
+            android:text="Guard SO"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/client_name_txt"   />
+
+
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_cross"
+        android:layout_alignParentRight="true"
+       android:paddingTop="10dp"
+       android:layout_weight="0.3"
+        />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"  >
+
+
+
+    <ImageView
+        android:id="@+id/icon_small_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/google_map_location"
+        android:padding="10dp"
+        android:layout_weight="0.2"
+        />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/client_name_second_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#281F2D"
+                android:text="Axis Bank DLE UNT 12345"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A799B7"
+                android:text="Post"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/client_name_second_txt"   />
+
+            <TextView
+                android:id="@+id/post_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#695C70"
+                android:text="Main Gate"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/post"
+                android:layout_below="@id/client_name_second_txt"   />
+
+            <TextView
+                android:id="@+id/post_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A799B7"
+                android:text="Post Rank"
+                android:layout_toRightOf="@id/post_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/client_name_second_txt"   />
+
+            <TextView
+                android:id="@+id/post_rank_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#695C70"
+                android:text="SO"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/post_rank"
+                android:layout_below="@id/client_name_second_txt"   />
+
+
+        </RelativeLayout>
+
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="Shift A"
+           android:layout_alignParentRight="true"
+           android:paddingTop="10dp"
+           android:layout_weight="0.3"
+          android:layout_marginLeft="10dp" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/icon_guard"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:src="@drawable/icon_guard"
+  android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    />
+
+    <Button
+             android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/icon_guard"
+
+        android:layout_marginLeft="250dp"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        android:text="Retake"
+        android:layout_marginTop="20dp"
+        android:textColor="#4C2170"
+        android:background="@drawable/rectangular_btn"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|bottom"
+        >
+        <FrameLayout
+            android:layout_width="310dp"
+            android:layout_height="420dp"
+            android:background="@drawable/circular_frame"
+            android:layout_marginTop="200dp"
+            android:layout_alignParentBottom="true"
+            >
+
+            <!--  <ImageView
+                  android:id="@+id/circle_img"
+                  android:layout_width="320dp"
+                  android:layout_height="320dp"
+                  android:layout_marginTop="170dp"
+                  android:src="@drawable/circular"
+                  android:text="jhkjhkjhkjhkj" />
+      -->
+
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/duty_in_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to take a Selfie Again"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+
+            <Button
+                android:id="@+id/retake_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/duty_in_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Retake"
+                android:layout_marginTop="10dp"
+                android:textColor="#4C2170"
+                android:background="@drawable/retake_btn"
+                />
+        </RelativeLayout>
+
+        </FrameLayout>
+
+
+            <!-- <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Click here to Mark Attendance"
+                  android:textColor="#FFFFFF"
+                  android:layout_gravity="center_horizontal|center_vertical"
+                  android:layout_marginTop="140dp" />
+      -->
+    </RelativeLayout>
+        </FrameLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

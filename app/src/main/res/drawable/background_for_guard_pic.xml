@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:="oval">
+    <gradient
+        android:endColor="#b5b6d2"
+        android:startColor="#555994"
+      />
+
+&lt;!&ndash;<solid android:color="@color/white"/>
+    <size android:width="@dimen/img_size_25dp"
+           android:height="@dimen/img_size_25dp"/>
+    <stroke
+        android:width="1dp"
+        android:color="#17BE6A" />&ndash;&gt;
+  &lt;!&ndash;  <size
+        android:width="48dp"
+        android:height="48dp" />
+    <solid android:color="@color/white" />
+    <stroke
+        android:width="1dp"
+        android:color="#17BE6A" />&ndash;&gt;
+</shape>-->
+
+
+<!-- <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@android:id/background">
+      <shape android:shape="oval">
+
+          <gradient
+          android:angle="90"
+              android:endColor="@color/black"
+              android:startColor="#17BE6A" />
+          <padding
+              android:bottom="5dp"
+              android:left="5dp"
+              android:right="5dp"
+              android:top="5dp" />
+      </shape>
+  </item>
+  <item android:id="@android:id/background">
+      <shape android:shape="oval">
+          <solid android:color="@android:color/white" />
+      </shape>
+  </item>
+
+  <item  android:bottom="4dp">
+      <shape android:shape="oval">
+          <size android:width="55dp"
+              android:height="55dp"/>
+          <solid android:color="@android:color/white" />
+      </shape>
+  </item>
+
+</layer-list>-->
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+
+        <layer-list>
+
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/light_grey_txt_color" />
+
+                </shape>
+            </item>
+
+
+
+            <item android:bottom="4dp">
+                <shape android:shape="oval">
+                    <size android:width="55dp" android:height="55dp" />
+                    <gradient android:angle="90"
+                        android:endColor="#E0E0E0"
+                        android:startColor="#E0E0E0" />
+
+                </shape>
+            </item>
+
+
+
+            <item android:bottom="10dp" android:left="6dp" android:right="6dp" android:top="6dp">
+                <shape android:shape="oval">
+                    <solid android:color="@android:color/white" />
+                </shape>
+            </item>
+
+
+
+        </layer-list>
+    </item>
+
+</selector>
+
+

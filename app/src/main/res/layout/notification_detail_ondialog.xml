@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/twentyDip"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/customEditTextSearch_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:id="@+id/headerTV"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/customEditTextSearch_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tenDip"
+        android:singleLine="false"
+        android:id="@+id/descriptionTextTV"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ok_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_purple_border_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/fourty_dp"
+            android:paddingRight="@dimen/fourty_dp"
+            android:text="@string/ok"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</LinearLayout>

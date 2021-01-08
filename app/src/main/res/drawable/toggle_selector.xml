@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+
+
+
+        android:drawable="@drawable/toggle_bg" android:state_checked="true"/>
+  <!--  <item android:drawable="@drawable/toggle_icon" android:state_checked="false"/>-->
+
+
+
+
+
+
+
+
+</selector>
+
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/list_bg_top"></item>
+    <item android:left="10dp">
+        <bitmap android:src="@drawable/waiting_status_btn"
+            android:gravity="center_vertical|left" />
+    </item>
+</layer-list>-->
+<!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <size
+        android:width="16dp"
+        android:height="16dp"  />
+
+    <corners android:radius="10dp"/>
+
+    <solid android:color="@color/white" />
+
+
+
+
+
+</shape>-->
